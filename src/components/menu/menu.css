@@ -1,0 +1,20 @@
+#menu-container {
+  columns: 300px;
+}
+
+.menu-card {
+  display: inline-block !important;
+  width: 100%;
+}
+
+.menu-item-code {
+  width: 30px;
+}
+
+.spicy-menu-item {
+  color: red;
+}
+
+.menu-item-description {
+  color: grey;
+}
