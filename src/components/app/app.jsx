@@ -46,7 +46,7 @@ export default function App() {
       </Route>
 
       <Navbar id="aaa" sticky="bottom" variant="light" bg="light">
-        <Navbar.Brand className="mx-auto">Footer should be here</Navbar.Brand>
+        <Navbar.Brand className="mx-auto">Jumbo Dragon Chinese Restaurant</Navbar.Brand>
       </Navbar>
     </div>
   );
