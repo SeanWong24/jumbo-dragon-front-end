@@ -55,7 +55,7 @@ export function Home() {
   return (
     <Container>
       <Alert className="my-1 text-center" variant="danger">
-        FREE Delivery over $50 (before tax) in xxxxxxx Area
+        FREE Delivery over $50 (before tax) in Limited Area
       </Alert>
       <Carousel className="my-1">
         {["img33.jpg", "img34.jpg", "img35.jpg", "img36.jpg"].map(
