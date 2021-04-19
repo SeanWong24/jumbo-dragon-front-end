@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Container, Row, Col, Card, Badge } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import { csvParse } from "d3-dsv";
 
 import "./menu.css";
@@ -34,10 +34,10 @@ export const Menu = () => {
             <b>{category}</b>
           </Card.Header>
           <Card.Body>
-            {menuItems.map((menuItem) => (
+            {menuItems.map((menuItem, i) => (
               <Row
+                key={i}
                 className={+menuItem.spicyLevel ? " spicy-menu-item" : ""}
-                key={menuItem.id}
               >
                 <Col className="mx-0" xs="auto">
                   <label className="menu-item-code">{menuItem.code}</label>
@@ -51,7 +51,7 @@ export const Menu = () => {
                       {menuItem.description
                         .split("\n")
                         .map((descriptionLine, i) => (
-                          <label key={i} className="my-0 menu-item-description">
+                          <label key={i} className="mt-0 menu-item-description">
                             {descriptionLine}
                           </label>
                         ))}
