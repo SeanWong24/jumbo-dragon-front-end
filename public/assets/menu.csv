@@ -1,278 +1,277 @@
-id,code,category,name,shortName,price,description,spicyLevel,glutenFree,imageUrl
-0,1,Appetizers,Roast Pork Egg Roll (1 pc),,1.6,,0,0,
-1,2,Appetizers,Vegetable Spring Roll (1 pc),,2.2,,0,0,
-2,3,Appetizers,Spring Roll (Chicken & Shrimp) (1 pc),,2.3,,0,0,
-3,4,Appetizers,French Fries (Large),,4.7,,0,0,
-4,5,Appetizers,Onion Ring,,5.15,,0,0,
-5,6,Appetizers,B.B.Q. Boneless Spareribs,,9.95,,0,0,
-6,7,Appetizers,B.B.Q. Spareribs,,11.95,,0,0,
-7,8,Appetizers,Jar Doo Chicken Wings,,10.5,,0,0,
-8,9,Appetizers,Honey Garlic Spareribs,,11.95,,0,0,
-9,10,Appetizers,Honey Garlic Chicken Wings,,10.75,,0,0,
-10,11,Appetizers,Hot & Spicy Chicken Wings,,10.5,,1,0,
-11,12,Appetizers,B.B.Q Slice Pork,,10.5,,0,0,
-12,13,Appetizers,Crabmeat Cheese Wonton (8 pcs),,8.25,,0,0,
-13,14,Appetizers,Steamed or Fried Dumpling,,9.25,,0,0,
-14,15,Appetizers,Pu Pu Platter (Feed 2),,18.95,"4 Chicken Wings
+code,category,name,shortName,price,description,spicyLevel,glutenFree,imageUrl
+1,Appetizers,Roast Pork Egg Roll (1 pc),,1.6,,0,0,
+2,Appetizers,Vegetable Spring Roll (1 pc),,2.2,,0,0,
+3,Appetizers,Spring Roll (Chicken & Shrimp) (1 pc),,2.3,,0,0,
+4,Appetizers,French Fries (Large),,4.7,,0,0,
+5,Appetizers,Onion Ring,,5.15,,0,0,
+6,Appetizers,B.B.Q. Boneless Spareribs,,9.95,,0,0,
+7,Appetizers,B.B.Q. Spareribs,,11.95,,0,0,
+8,Appetizers,Jar Doo Chicken Wings,,10.5,,0,0,
+9,Appetizers,Honey Garlic Spareribs,,11.95,,0,0,
+10,Appetizers,Honey Garlic Chicken Wings,,10.75,,0,0,
+11,Appetizers,Hot & Spicy Chicken Wings,,10.5,,1,0,
+12,Appetizers,B.B.Q Slice Pork,,10.5,,0,0,
+13,Appetizers,Crabmeat Cheese Wonton (8 pcs),,8.25,,0,0,
+14,Appetizers,Steamed or Fried Dumpling,,9.25,,0,0,
+15,Appetizers,Pu Pu Platter (Feed 2),,18.95,"4 Chicken Wings
 2 Egg Rolls
 2 Spareribs
 4 Sweet & Sour Shrimp
 2 Crabmeat Cheese Wonton
 4 Fried Wonton 
 1 Sweet & Sour Chicken",0,0,
-15,16,Soup,Wonton Soup,,3.95,,0,0,
-16,17,Soup,Vegetable Soup,,3.95,,0,0,
-17,18,Soup,Egg Drop Soup,,3.95,,0,0,
-18,19,Soup,Chicken Noodle or Rice Soup,,3.95,,0,0,
-19,20,Soup,Vevlet Chicken & Corn Soup,,4.25,,0,0,
-20,21,Soup,Hot & Sour Soup (pork),,4.5,,1,0,
-21,22,Soup,House Special Wonton Soup,,4.95,,0,0,
-22,23,Soup,House Special Seafood Soup,,5.5,,0,0,
-23,24,Sweet & Sour,Sweet & Sour Wonton,,6.95,,0,0,
-24,26,Sweet & Sour,Sweet & Sour Pork,,9.9,,0,0,
-25,27,Sweet & Sour,Sweet & Sour Chicken (chicken ball),,10.5,,0,0,
-26,28,Sweet & Sour,Sweet & Sour Shrimp,,12.95,,0,0,
-27,29,Sweet & Sour,Sweet & Sour Combination,,12.95,,0,0,
-28,30,Sweet & Sour,Sweet & Sour Sauce,,1.85,,0,0,
-29,31,Fried Rice,Steamed Rice,,2.7,,0,0,
-30,32,Fried Rice,Plain Fried Rice,,6.95,,0,0,
-31,33,Fried Rice,Vegetable or Mushroom Fried Rice,,8.25,,0,0,
-32,34,Fried Rice,Roast Pork Fried Rice,,8.5,,0,0,
-33,35,Fried Rice,Chicken or Beef Fried Rice,,8.5,,0,0,
-34,36,Fried Rice,Shrimp Fried Rice,,10.5,,0,0,
-35,37,Fried Rice,Young Chow Fried Rice,,10.5,,0,0,
-36,39,Fried Rice,House Special Fried Rice,,10.5,"Roast Pork, Chicken, Shrimp",0,0,
-37,40a,Chop Suey & Chow Mein,Vegetable Chop Suey,,7.5,,0,0,
-38,40b,Chop Suey & Chow Mein,Vegetable Chow Mein,,7.75,,0,0,
-39,41a,Chop Suey & Chow Mein,Pork Chop Suey,,8.25,,0,0,
-40,41b,Chop Suey & Chow Mein,Pork Chow Mein,,8.5,,0,0,
-41,42a,Chop Suey & Chow Mein,Chicken or Beef Chop Suey,,8.25,,0,0,
-42,42b,Chop Suey & Chow Mein,Chicken or Beef Chow Mein,,8.5,,0,0,
-43,43a,Chop Suey & Chow Mein,Shrimp Chop Suey,,11.75,,0,0,
-44,43b,Chop Suey & Chow Mein,Shrimp Chow Mein,,11.95,,0,0,
-45,44a,Chop Suey & Chow Mein,House Special Chop Suey,,11.75,"Roast Pork, Chicken, Shrimp",0,0,
-46,44b,Chop Suey & Chow Mein,House Special Chow Mein,,11.95,"Roast Pork, Chicken, Shrimp",0,0,
-47,45,Curry Dishs,"Curry Chicken, Beef or Boast Pork",,11.5,,1,0,
-48,46,Curry Dishs,Curry Shrimp,,12.95,,1,0,
-49,47,Curry Dishs,House Special Curry,,12.95,"Roast Pork, Chicken, Shrimp",1,0,
-50,48,Shanghai Noodle,Vegetable Noodle,,9.5,,1,0,
-51,49,Shanghai Noodle,Roast Pork or Chicken or Beef Noodle,,10.5,,1,0,
-52,50,Shanghai Noodle,Shrimp Noodle,,12.5,,1,0,
-53,51,Shanghai Noodle,House Special Noodle,,12.5,"Roast Pork, Chicken, Shrimp",1,0,
-54,52,Mein Feng or Ho Feng,Vegetable Mein Feng or Ho Feng,,9.5,,0,0,
-55,53,Mein Feng or Ho Feng,"Chicken, Beef, or Roast Pork Mein Feng or Ho Feng",,10.5,,0,0,
-56,54,Mein Feng or Ho Feng,Shrimp Mein Feng or Ho Feng,,12.5,,0,0,
-57,55,Mein Feng or Ho Feng,Singapore Special Mein Feng,,12.5,"Shrimp, Chicken, Roast Pork",1,0,
-58,56,Lo Mein,Vegetable Lo Mein,,9.5,,0,0,
-59,57,Lo Mein,Roast Pork or Chicken or Beef Lo Mein,,10.5,,0,0,
-60,58,Lo Mein,Shrimp Lo Mein,,12.5,,0,0,
-61,59,Lo Mein,House Special Lo Mein,,12.5,,0,0,
-62,60,Lo Mein,Lobster Lo Mein,,14.95,,0,0,
-63,61,Cantonese Egg Noodles,Vegetable Egg Noodle,,9.5,,0,0,
-64,62,Cantonese Egg Noodles,Roast Pork or Chicken or Beef Egg Noodle,,10.5,,0,0,
-65,63,Cantonese Egg Noodles,Shrimp Egg Noodle,,12.5,,0,0,
-66,64,Cantonese Egg Noodles,House Special Egg Noodle,,12.5,,0,0,
-67,65,Roast Pork or Beef,Pepper Steak w. Onion,,10.5,,0,0,
-68,66,Roast Pork or Beef,Roast Pork or Beef w. Broccoli,,10.5,,0,0,
-69,67,Roast Pork or Beef,Roast Pork or Beef w. Veg. & Almond,,10.5,,0,0,
-70,68,Roast Pork or Beef,Roast Pork or Beef w. Chinese Veg.,,10.5,Bok Choy,0,0,
-71,69,Roast Pork or Beef,Roast Pork or Beef w. Black Bean Sauce,,10.5,,0,0,
-72,70,Roast Pork or Beef,Roast Pork or Beef w. Mixed Vegetable,,10.5,,0,0,
-73,71,Roast Pork or Beef,Roast Pork or Beef w. Mushroom,,10.95,,0,0,
-74,72,Roast Pork or Beef,Kung Pao Roast Pork or Beef,,10.95,with peanuts,1,0,
-75,73,Roast Pork or Beef,Roast Pork or Beef w. Snow Peas,,11.5,in season,0,0,
-76,74,Roast Pork or Beef,Garlic Rib w. Black Bean Sauce,,12.5,,0,0,
-77,75,Roast Pork or Beef,Dry Garlic Spareribs,,12.5,,0,0,
-78,76,Chicken,Moo Goo Gai Pan,,10.5,,0,0,
-79,77,Chicken,Chicken w. Broccoli,,10.5,,0,0,
-80,78,Chicken,Chicken w. Vegetables & Almonds,,10.5,,0,0,
-81,79,Chicken,Bourbon Chicken,,10.5,,0,0,
-82,80,Chicken,Chicken w. Black Bean Sauce,,10.5,,0,0,
-83,81,Chicken,Chicken w. Mixed Vegetable,,10.5,,0,0,
-84,82,Chicken,Chicken w. Cashew Nuts,,10,,0,0,
-85,83,Chicken,Chicken w. Snow Peas,,10.95,in season,0,0,
-86,84,Chicken,Kung Pao Chicken,,10.95,with peanuts,1,0,
-87,85,Chicken,Honey Chicken,,10.95,,0,0,
-88,86,Chicken,Alomond Soo Guy,,10.95,,0,0,
-89,87,Chicken,Lemon Chicken,,10.95,,0,0,
-90,88,Seafood,Shrimp w. Broccoli,,12.95,,0,0,
-91,89,Seafood,Shrimp w. Vegetable & Almonds,,12.95,,0,0,
-92,90,Seafood,Shrimp w. Chinese Veg.,,12.95,Bok choy,0,0,
-93,91,Seafood,Shrimp w. Black Bean Sauce,,12.95,,0,0,
-94,92,Seafood,Shrimp w. Mixed Vegetable,,12.95,,0,0,
-95,93,Seafood,Shrimp w. Cashew Nuts,,12.95,,0,0,
-96,94,Seafood,Kung Pao Shrimp,,12.95,,0,0,
-97,95,Seafood,Shrimp w. Snow Peas,,12.95,in season,0,0,
-98,96,Seafood,Scallop w. Mixed Vegetables,,15.95,,0,0,
-99,97,Seafood,Shrimp w. Lobster Sauce,,12.95,with minced pork,0,0,
-100,98,Seafood,Butterfly Shrimp,,15.95,Stuffed Shrimp,0,0,
-101,99,Egg Foo Young,Mushroom Egg Foo Young,,10,,0,0,
-102,100,Egg Foo Young,Roast Pork Egg Foo Young,,10.45,,0,0,
-103,101,Egg Foo Young,Chicken or Beef Egg Foo Young,,10.45,,0,0,
-104,102,Egg Foo Young,Fresh Shrimp Egg Foo Young,,11.35,,0,0,
-105,103,Moo Shu Dishes,Moo Shu Vegetable (5 pancakes),,11.45,,0,0,
-106,104,Moo Shu Dishes,Moo Shu Pork (5 pancakes),,12.45,,0,0,
-107,105,Moo Shu Dishes,Moo Shu Chicken or Beef (5 pancakes),,12.45,,0,0,
-108,106,Moo Shu Dishes,Moo Shu Shrimp (5 pancakes),,14.55,,0,0,
-109,D1,Special Diet Plates,Mixed Vegetables Delight (Steamed),,9.5,,0,0,
-110,D2,Special Diet Plates,Chicken Broccoli (Steamed),,10.5,,0,0,
-111,D3,Special Diet Plates,Shrimp w. Broccoli (Steamed),,12.95,,0,0,
-112,D4,Special Diet Plates,Chicken w. Mixed Vegetable (Steamed),,10.5,,0,0,
-113,D5,Special Diet Plates,Shrimp w. Mixed Vegetable (Steamed),,12.95,,0,0,
-114,D6,Special Diet Plates,Shrimp & Chicken w. Mixed Vegetable (Steamed),,13.95,,0,0,
-115,D7,Special Diet Plates,Seafood Combination (Steamed),,18.95,,0,0,
-116,D8,Special Diet Plates,Broccoli w. Garlic (Steamed),,9.5,,0,0,
-117,D9,Vegetable & Tofu,Diced Vegetables & Almond,,9.5,,0,0,
-118,D10,Vegetable & Tofu,House Special Mixed Vegetable,,9.5,,0,0,
-119,D11,Vegetable & Tofu,Bean Curd Home Style (No Meat),,9.95,,1,0,
-120,D12,Vegetable & Tofu,Mixed Vegetable w. Garlic Sauce,,9.5,,1,0,
-121,C1,Combination Platters,"Vegetable Roll
+16,Soup,Wonton Soup,,3.95,,0,0,
+17,Soup,Vegetable Soup,,3.95,,0,0,
+18,Soup,Egg Drop Soup,,3.95,,0,0,
+19,Soup,Chicken Noodle or Rice Soup,,3.95,,0,0,
+20,Soup,Vevlet Chicken & Corn Soup,,4.25,,0,0,
+21,Soup,Hot & Sour Soup (pork),,4.5,,1,0,
+22,Soup,House Special Wonton Soup,,4.95,,0,0,
+23,Soup,House Special Seafood Soup,,5.5,,0,0,
+24,Sweet & Sour,Sweet & Sour Wonton,,6.95,,0,0,
+26,Sweet & Sour,Sweet & Sour Pork,,9.9,,0,0,
+27,Sweet & Sour,Sweet & Sour Chicken (chicken ball),,10.5,,0,0,
+28,Sweet & Sour,Sweet & Sour Shrimp,,12.95,,0,0,
+29,Sweet & Sour,Sweet & Sour Combination,,12.95,,0,0,
+30,Sweet & Sour,Sweet & Sour Sauce,,1.85,,0,0,
+31,Fried Rice,Steamed Rice,,2.7,,0,0,
+32,Fried Rice,Plain Fried Rice,,6.95,,0,0,
+33,Fried Rice,Vegetable or Mushroom Fried Rice,,8.25,,0,0,
+34,Fried Rice,Roast Pork Fried Rice,,8.5,,0,0,
+35,Fried Rice,Chicken or Beef Fried Rice,,8.5,,0,0,
+36,Fried Rice,Shrimp Fried Rice,,10.5,,0,0,
+37,Fried Rice,Young Chow Fried Rice,,10.5,,0,0,
+39,Fried Rice,House Special Fried Rice,,10.5,"Roast Pork, Chicken, Shrimp",0,0,
+40a,Chop Suey & Chow Mein,Vegetable Chop Suey,,7.5,,0,0,
+40b,Chop Suey & Chow Mein,Vegetable Chow Mein,,7.75,,0,0,
+41a,Chop Suey & Chow Mein,Pork Chop Suey,,8.25,,0,0,
+41b,Chop Suey & Chow Mein,Pork Chow Mein,,8.5,,0,0,
+42a,Chop Suey & Chow Mein,Chicken or Beef Chop Suey,,8.25,,0,0,
+42b,Chop Suey & Chow Mein,Chicken or Beef Chow Mein,,8.5,,0,0,
+43a,Chop Suey & Chow Mein,Shrimp Chop Suey,,11.75,,0,0,
+43b,Chop Suey & Chow Mein,Shrimp Chow Mein,,11.95,,0,0,
+44a,Chop Suey & Chow Mein,House Special Chop Suey,,11.75,"Roast Pork, Chicken, Shrimp",0,0,
+44b,Chop Suey & Chow Mein,House Special Chow Mein,,11.95,"Roast Pork, Chicken, Shrimp",0,0,
+45,Curry Dishs,"Curry Chicken, Beef or Boast Pork",,11.5,,1,0,
+46,Curry Dishs,Curry Shrimp,,12.95,,1,0,
+47,Curry Dishs,House Special Curry,,12.95,"Roast Pork, Chicken, Shrimp",1,0,
+48,Shanghai Noodle,Vegetable Noodle,,9.5,,1,0,
+49,Shanghai Noodle,Roast Pork or Chicken or Beef Noodle,,10.5,,1,0,
+50,Shanghai Noodle,Shrimp Noodle,,12.5,,1,0,
+51,Shanghai Noodle,House Special Noodle,,12.5,"Roast Pork, Chicken, Shrimp",1,0,
+52,Mein Feng or Ho Feng,Vegetable Mein Feng or Ho Feng,,9.5,,0,0,
+53,Mein Feng or Ho Feng,"Chicken, Beef, or Roast Pork Mein Feng or Ho Feng",,10.5,,0,0,
+54,Mein Feng or Ho Feng,Shrimp Mein Feng or Ho Feng,,12.5,,0,0,
+55,Mein Feng or Ho Feng,Singapore Special Mein Feng,,12.5,"Shrimp, Chicken, Roast Pork",1,0,
+56,Lo Mein,Vegetable Lo Mein,,9.5,,0,0,
+57,Lo Mein,Roast Pork or Chicken or Beef Lo Mein,,10.5,,0,0,
+58,Lo Mein,Shrimp Lo Mein,,12.5,,0,0,
+59,Lo Mein,House Special Lo Mein,,12.5,,0,0,
+60,Lo Mein,Lobster Lo Mein,,14.95,,0,0,
+61,Cantonese Egg Noodles,Vegetable Egg Noodle,,9.5,,0,0,
+62,Cantonese Egg Noodles,Roast Pork or Chicken or Beef Egg Noodle,,10.5,,0,0,
+63,Cantonese Egg Noodles,Shrimp Egg Noodle,,12.5,,0,0,
+64,Cantonese Egg Noodles,House Special Egg Noodle,,12.5,,0,0,
+65,Roast Pork or Beef,Pepper Steak w. Onion,,10.5,,0,0,
+66,Roast Pork or Beef,Roast Pork or Beef w. Broccoli,,10.5,,0,0,
+67,Roast Pork or Beef,Roast Pork or Beef w. Veg. & Almond,,10.5,,0,0,
+68,Roast Pork or Beef,Roast Pork or Beef w. Chinese Veg.,,10.5,Bok Choy,0,0,
+69,Roast Pork or Beef,Roast Pork or Beef w. Black Bean Sauce,,10.5,,0,0,
+70,Roast Pork or Beef,Roast Pork or Beef w. Mixed Vegetable,,10.5,,0,0,
+71,Roast Pork or Beef,Roast Pork or Beef w. Mushroom,,10.95,,0,0,
+72,Roast Pork or Beef,Kung Pao Roast Pork or Beef,,10.95,with peanuts,1,0,
+73,Roast Pork or Beef,Roast Pork or Beef w. Snow Peas,,11.5,in season,0,0,
+74,Roast Pork or Beef,Garlic Rib w. Black Bean Sauce,,12.5,,0,0,
+75,Roast Pork or Beef,Dry Garlic Spareribs,,12.5,,0,0,
+76,Chicken,Moo Goo Gai Pan,,10.5,,0,0,
+77,Chicken,Chicken w. Broccoli,,10.5,,0,0,
+78,Chicken,Chicken w. Vegetables & Almonds,,10.5,,0,0,
+79,Chicken,Bourbon Chicken,,10.5,,0,0,
+80,Chicken,Chicken w. Black Bean Sauce,,10.5,,0,0,
+81,Chicken,Chicken w. Mixed Vegetable,,10.5,,0,0,
+82,Chicken,Chicken w. Cashew Nuts,,10,,0,0,
+83,Chicken,Chicken w. Snow Peas,,10.95,in season,0,0,
+84,Chicken,Kung Pao Chicken,,10.95,with peanuts,1,0,
+85,Chicken,Honey Chicken,,10.95,,0,0,
+86,Chicken,Alomond Soo Guy,,10.95,,0,0,
+87,Chicken,Lemon Chicken,,10.95,,0,0,
+88,Seafood,Shrimp w. Broccoli,,12.95,,0,0,
+89,Seafood,Shrimp w. Vegetable & Almonds,,12.95,,0,0,
+90,Seafood,Shrimp w. Chinese Veg.,,12.95,Bok choy,0,0,
+91,Seafood,Shrimp w. Black Bean Sauce,,12.95,,0,0,
+92,Seafood,Shrimp w. Mixed Vegetable,,12.95,,0,0,
+93,Seafood,Shrimp w. Cashew Nuts,,12.95,,0,0,
+94,Seafood,Kung Pao Shrimp,,12.95,,0,0,
+95,Seafood,Shrimp w. Snow Peas,,12.95,in season,0,0,
+96,Seafood,Scallop w. Mixed Vegetables,,15.95,,0,0,
+97,Seafood,Shrimp w. Lobster Sauce,,12.95,with minced pork,0,0,
+98,Seafood,Butterfly Shrimp,,15.95,Stuffed Shrimp,0,0,
+99,Egg Foo Young,Mushroom Egg Foo Young,,10,,0,0,
+100,Egg Foo Young,Roast Pork Egg Foo Young,,10.45,,0,0,
+101,Egg Foo Young,Chicken or Beef Egg Foo Young,,10.45,,0,0,
+102,Egg Foo Young,Fresh Shrimp Egg Foo Young,,11.35,,0,0,
+103,Moo Shu Dishes,Moo Shu Vegetable (5 pancakes),,11.45,,0,0,
+104,Moo Shu Dishes,Moo Shu Pork (5 pancakes),,12.45,,0,0,
+105,Moo Shu Dishes,Moo Shu Chicken or Beef (5 pancakes),,12.45,,0,0,
+106,Moo Shu Dishes,Moo Shu Shrimp (5 pancakes),,14.55,,0,0,
+D1,Special Diet Plates,Mixed Vegetables Delight (Steamed),,9.5,,0,0,
+D2,Special Diet Plates,Chicken Broccoli (Steamed),,10.5,,0,0,
+D3,Special Diet Plates,Shrimp w. Broccoli (Steamed),,12.95,,0,0,
+D4,Special Diet Plates,Chicken w. Mixed Vegetable (Steamed),,10.5,,0,0,
+D5,Special Diet Plates,Shrimp w. Mixed Vegetable (Steamed),,12.95,,0,0,
+D6,Special Diet Plates,Shrimp & Chicken w. Mixed Vegetable (Steamed),,13.95,,0,0,
+D7,Special Diet Plates,Seafood Combination (Steamed),,18.95,,0,0,
+D8,Special Diet Plates,Broccoli w. Garlic (Steamed),,9.5,,0,0,
+D9,Vegetable & Tofu,Diced Vegetables & Almond,,9.5,,0,0,
+D10,Vegetable & Tofu,House Special Mixed Vegetable,,9.5,,0,0,
+D11,Vegetable & Tofu,Bean Curd Home Style (No Meat),,9.95,,1,0,
+D12,Vegetable & Tofu,Mixed Vegetable w. Garlic Sauce,,9.5,,1,0,
+C1,Combination Platters,"Vegetable Roll
 Mix Vegetable
 Vegetable Egg Noodles
 Plain Fried Rice",,10.95,,0,0,
-122,C2,Combination Platters,"Egg Roll 
+C2,Combination Platters,"Egg Roll 
 Sweet & Sour Chicken  
 Chicken Chow Mein        
 Chicken Fried Rice",,10.55,,0,0,
-123,C3,Combination Platters,"Egg Roll 
+C3,Combination Platters,"Egg Roll 
 Sweet & Sour Shrimp  
 Chicken Chow Mein
 Chicken Fried Rice",,10.95,,0,0,
-124,C4,Combination Platters,"Egg Roll   
+C4,Combination Platters,"Egg Roll   
 Sweet & Sour Chicken 
 Beef w. Veg. & Almond 
 Chicken Fried Rice",,10.75,,0,0,
-125,C5,Combination Platters,"Egg Roll 
+C5,Combination Platters,"Egg Roll 
 Sweet & Sour Chicken 
 Pork Lo Mein
 Chicken Fried Rice",,10.75,,0,0,
-126,C6,Combination Platters,"Egg Roll 
+C6,Combination Platters,"Egg Roll 
 Sweet & Sour Pork 
 Sesame Chicken 
 Chicken Fried Rice",,10.95,,0,0,
-127,C7,Combination Platters,"Egg Roll 
+C7,Combination Platters,"Egg Roll 
 Sweet & Sour Chicken ,
 General Tso's Chicken 
 Chicken Fried Rice",,10.95,,1,0,
-128,C8,Combination Platters,"Egg Roll 
+C8,Combination Platters,"Egg Roll 
 Boneless Spareribs 
 Pepper Steak w. Onion 
 Chicken Fried Rice",,10.95,,0,0,
-129,C9,Combination Platters,"Egg Roll 
+C9,Combination Platters,"Egg Roll 
 B.B.Q. Spareribs  
 Beef w. Garlic Sauce 
 Chicken Fried Rice",,10.95,,1,0,
-130,C10,Combination Platters,"Egg Roll
+C10,Combination Platters,"Egg Roll
 Sweet & Sour Chicken 
 Beef w. Broccoli 
 Chicken Fried Rice",,11.25,,0,0,
-131,C11,Combination Platters,"Egg Roll 
+C11,Combination Platters,"Egg Roll 
 Sweet & Sour Chicken 
 Almond Soo Guy 
 Chicken Fried Rice",,10.95,,0,0,
-132,C12,Combination Platters,"Egg Roll
+C12,Combination Platters,"Egg Roll
 Sweet & Sour Shrimp 
 Chicken Wings 
 Chicken Fried Rice",,10.85,,0,0,
-133,S1,Jumbo Dragon Specialities,Sesame Chicken,,12.45,,0,0,
-134,S2,Jumbo Dragon Specialities,"General Tso's Chicken
-Shrimps",,"       12.45
-       17.45",Crispy golden tender chicken (shrimp) in a mildly seasoned sauce with broccoli.,1,0,
-135,S3,Jumbo Dragon Specialities,Orange Flavored Chicken or Beef,,13.45,"Tender fillets of marinated beef or chicken,
+S1,Jumbo Dragon Specialities,Sesame Chicken,,12.45,,0,0,
+S2a,Jumbo Dragon Specialities,General Tso's Chicken,,12.45,Crispy golden tender chicken in a mildly seasoned sauce with broccoli.,1,0,
+S2b,Jumbo Dragon Specialities,General Tso's Shrimps,,17.45,Crispy golden tender shrimp in a mildly seasoned sauce with broccoli.,1,0,
+S3,Jumbo Dragon Specialities,Orange Flavored Chicken or Beef,,13.45,"Tender fillets of marinated beef or chicken,
 delicately sautéed seasoned with imported 
 orange peals with broccoli.",1,0,
-136,S4,Jumbo Dragon Specialities,"Beef w. Black Bean Sauce
+S4,Jumbo Dragon Specialities,"Beef w. Black Bean Sauce
 w. Cantonese Chow Mein or Ho Feng",,13.45,,,0,
-137,S5,Jumbo Dragon Specialities,Shrimp & Scallop w. Szechuan Sauce,,15.95,,1,0,
-138,S6,Jumbo Dragon Specialities,Tai Dop Voy,,13.95,"A savory blend of shrimp, chicken, roast pork & beef
+S5,Jumbo Dragon Specialities,Shrimp & Scallop w. Szechuan Sauce,,15.95,,1,0,
+S6,Jumbo Dragon Specialities,Tai Dop Voy,,13.95,"A savory blend of shrimp, chicken, roast pork & beef
 w. mushroom & variety of Chinese vegetable in seasons.",0,0,
-139,S7,Jumbo Dragon Specialities,Cantonese Chow Mein,,13.55,"Sliced chicken, shrimp, B.B.Q. pork, cooked with mixed veg.
+S7,Jumbo Dragon Specialities,Cantonese Chow Mein,,13.55,"Sliced chicken, shrimp, B.B.Q. pork, cooked with mixed veg.
 served on top of crispy Cantonese egg noodles.",0,0,
-140,S8,Jumbo Dragon Specialities,Seafood Cantonese Chow Mein,,16.95,"Shrimp, scallops, crabmeat and sautéed with Chinese vegetables, over crispy noodles.",0,0,
-141,S9,Jumbo Dragon Specialities,Chow Shan Pan (Shrimp & Chicken),,14.95,"Fresh shrimp and sliced chicken, sautéed with snow peas, celery, onion, green pepper, baby corn in brown sauce.",0,0,
-142,S10,Jumbo Dragon Specialities,Salt & Pepper Shrimp (unshelled),,17.95,,0,0,
-143,S11,Jumbo Dragon Specialities,Ma Po To Fu (with Meat),,11.95,,1,0,
-144,S12,Jumbo Dragon Specialities,Happy Family,,16.95,"Sliced pork, shrimp, beef, chicken, crabmeat and scallops sautéed with vegetables in tasty brown sauce.",0,0,
-145,S13,Jumbo Dragon Specialities,Seafood Combination,,18.95,"A special combination of shrimp, scallops, crabmeat, lobster meat, sautéed with garden vegetables in white sauce.",0,0,
-146,S14,Jumbo Dragon Specialities,Seafood w. Garlic Sauce,,18.95,"Crabmeat, shrimp, scallops and lobster meat, green peppers, snow pea, pods, woodears with garlic sauce.",1,0,
-147,S15,Jumbo Dragon Specialities,"Double Sauteed Sliced Pork, Chicken or Beef",,12.95,"Diced meat with green pepper, onion, carrot, cabbage in chef's special brown sauce.",1,0,
-148,S16,Jumbo Dragon Specialities,Hot Spiced Shredded Beef or Chicken,,12.95,"Shredded beef with celery, carrots, with red hot pepper in brown sauce.",1,0,
-149,S17,Jumbo Dragon Specialities,"Sliced Chicken, Pork or Beef w. Garlic Sauce",,12.95,"Sliced chicken, pork, beef, with sliced carrots, celery, woodears, with garlic sauce.",1,0,
-150,S18,Jumbo Dragon Specialities,Shrimp w. Garlic Sauce,,14.95,,1,0,
-151,S19,Jumbo Dragon Specialities,Twin w. Garlic Sauce,,14.95,"Shrimp and scallops with green pepper, and celery with garlic sauce.",1,0,
-152,S20,Jumbo Dragon Specialities,Sauteed Double Happiness,,14.95,"Shrimp, diced chicken, celery, carrot & baby corn, mushroom with spicy sauce (with peanuts).",1,0,
-153,S21,Jumbo Dragon Specialities,Hunan Chicken or Beef,,12.95,"Sliced chicken or beef with broccoli, green pepper, mushroom, celery, onion, baby corn, carrot, snow pea, in spicy brown sauce.",1,0,
-154,S22,Jumbo Dragon Specialities,Shrimp Hunan Style,,14.95,,1,0,
-155,S23,Jumbo Dragon Specialities,"Szechuan Pork, Chicken or Beef",,12.95,,1,0,
-156,S24,Jumbo Dragon Specialities,Szechuan Shrimp,,14.95,,1,0,
-157,S25,Jumbo Dragon Specialities,Dragon & Phoenix,,15.95,Fresh Shrimp and crabmeat w. fresh Chinese vegetable and General Tso chicken.,1,0,
-158,S26,Jumbo Dragon Specialities,Mongolian Beef or Chicken,,13.95,,1,0,
-159,S27,Jumbo Dragon Specialities,Mongolian Shrimp,,14.95,,1,0,
-160,S28,Jumbo Dragon Specialities,Ginger Beef or Chicken,,12.95,,0,0,
-161,L1,Lunch Special,Sweet& Sour Pork,,7.5,,0,0,
-162,L2,Lunch Special,Sweet & Sour Chicken,,7.5,,0,0,
-163,L3,Lunch Special,Mix Vegetable,,7.5,,0,0,
-164,L4,Lunch Special,B.B.Q. Boneless Spareribs,,7.5,,0,0,
-165,L5,Lunch Special,Chicken or Pork Lo Mein,,7.5,,0,0,
-166,L6,Lunch Special,Moo Goo Gai Pan,,7.5,,0,0,
-167,L7,Lunch Special,Pepper Steak w. Onion,,7.5,,0,0,
-168,L8,Lunch Special,Chicken or Beef w. Broccoli,,7.5,,0,0,
-169,L9,Lunch Special,"Chicken or Beef w.
+S8,Jumbo Dragon Specialities,Seafood Cantonese Chow Mein,,16.95,"Shrimp, scallops, crabmeat and sautéed with Chinese vegetables, over crispy noodles.",0,0,
+S9,Jumbo Dragon Specialities,Chow Shan Pan (Shrimp & Chicken),,14.95,"Fresh shrimp and sliced chicken, sautéed with snow peas, celery, onion, green pepper, baby corn in brown sauce.",0,0,
+S10,Jumbo Dragon Specialities,Salt & Pepper Shrimp (unshelled),,17.95,,0,0,
+S11,Jumbo Dragon Specialities,Ma Po To Fu (with Meat),,11.95,,1,0,
+S12,Jumbo Dragon Specialities,Happy Family,,16.95,"Sliced pork, shrimp, beef, chicken, crabmeat and scallops sautéed with vegetables in tasty brown sauce.",0,0,
+S13,Jumbo Dragon Specialities,Seafood Combination,,18.95,"A special combination of shrimp, scallops, crabmeat, lobster meat, sautéed with garden vegetables in white sauce.",0,0,
+S14,Jumbo Dragon Specialities,Seafood w. Garlic Sauce,,18.95,"Crabmeat, shrimp, scallops and lobster meat, green peppers, snow pea, pods, woodears with garlic sauce.",1,0,
+S15,Jumbo Dragon Specialities,"Double Sauteed Sliced Pork, Chicken or Beef",,12.95,"Diced meat with green pepper, onion, carrot, cabbage in chef's special brown sauce.",1,0,
+S16,Jumbo Dragon Specialities,Hot Spiced Shredded Beef or Chicken,,12.95,"Shredded beef with celery, carrots, with red hot pepper in brown sauce.",1,0,
+S17,Jumbo Dragon Specialities,"Sliced Chicken, Pork or Beef w. Garlic Sauce",,12.95,"Sliced chicken, pork, beef, with sliced carrots, celery, woodears, with garlic sauce.",1,0,
+S18,Jumbo Dragon Specialities,Shrimp w. Garlic Sauce,,14.95,,1,0,
+S19,Jumbo Dragon Specialities,Twin w. Garlic Sauce,,14.95,"Shrimp and scallops with green pepper, and celery with garlic sauce.",1,0,
+S20,Jumbo Dragon Specialities,Sauteed Double Happiness,,14.95,"Shrimp, diced chicken, celery, carrot & baby corn, mushroom with spicy sauce (with peanuts).",1,0,
+S21,Jumbo Dragon Specialities,Hunan Chicken or Beef,,12.95,"Sliced chicken or beef with broccoli, green pepper, mushroom, celery, onion, baby corn, carrot, snow pea, in spicy brown sauce.",1,0,
+S22,Jumbo Dragon Specialities,Shrimp Hunan Style,,14.95,,1,0,
+S23,Jumbo Dragon Specialities,"Szechuan Pork, Chicken or Beef",,12.95,,1,0,
+S24,Jumbo Dragon Specialities,Szechuan Shrimp,,14.95,,1,0,
+S25,Jumbo Dragon Specialities,Dragon & Phoenix,,15.95,Fresh Shrimp and crabmeat w. fresh Chinese vegetable and General Tso chicken.,1,0,
+S26,Jumbo Dragon Specialities,Mongolian Beef or Chicken,,13.95,,1,0,
+S27,Jumbo Dragon Specialities,Mongolian Shrimp,,14.95,,1,0,
+S28,Jumbo Dragon Specialities,Ginger Beef or Chicken,,12.95,,0,0,
+L1,Lunch Special,Sweet& Sour Pork,,7.5,,0,0,
+L2,Lunch Special,Sweet & Sour Chicken,,7.5,,0,0,
+L3,Lunch Special,Mix Vegetable,,7.5,,0,0,
+L4,Lunch Special,B.B.Q. Boneless Spareribs,,7.5,,0,0,
+L5,Lunch Special,Chicken or Pork Lo Mein,,7.5,,0,0,
+L6,Lunch Special,Moo Goo Gai Pan,,7.5,,0,0,
+L7,Lunch Special,Pepper Steak w. Onion,,7.5,,0,0,
+L8,Lunch Special,Chicken or Beef w. Broccoli,,7.5,,0,0,
+L9,Lunch Special,"Chicken or Beef w.
 Vegetable & Almond",,7.5,,0,0,
-170,L10,Lunch Special,Chicken or Beef w. Mixed Veg.,,7.5,,0,0,
-171,L11,Lunch Special,Chicken or Beef w. Garlic Sauce,,7.5,,1,0,
-172,L12,Lunch Special,Hunan Chicken or Beef,,7.5,,1,0,
-173,L13,Lunch Special,Sesame Chicken,,7.5,,,0,
-174,L14,Lunch Special,General Tso's Chicken,,7.5,,1,0,
-175,L15,Lunch Special,Kung Pao Chicken or Beef,,7.5,,1,0,
-176,L16,Lunch Special,Fried Chicken Wing,,7.5,,0,0,
-177,L17,Lunch Special,Chicken Chow Mein,,7.5,,0,0,
-178,L18,Lunch Special,Chicken or Pork Egg Noodle,,7.5,,0,0,
-179,F2a,Jumbo Dragon Family Dinners,"2 Egg Rolls
+L10,Lunch Special,Chicken or Beef w. Mixed Veg.,,7.5,,0,0,
+L11,Lunch Special,Chicken or Beef w. Garlic Sauce,,7.5,,1,0,
+L12,Lunch Special,Hunan Chicken or Beef,,7.5,,1,0,
+L13,Lunch Special,Sesame Chicken,,7.5,,,0,
+L14,Lunch Special,General Tso's Chicken,,7.5,,1,0,
+L15,Lunch Special,Kung Pao Chicken or Beef,,7.5,,1,0,
+L16,Lunch Special,Fried Chicken Wing,,7.5,,0,0,
+L17,Lunch Special,Chicken Chow Mein,,7.5,,0,0,
+L18,Lunch Special,Chicken or Pork Egg Noodle,,7.5,,0,0,
+F2a,Jumbo Dragon Family Dinners,Dinner for Two A,,25.95,"2 Egg Rolls
 Sweet & Sour Chicken
 Chicken Chow Mein
 Chicken Fried Rice
-2 Fortune Cookies",,25.95,,0,0,
-180,F2b,Jumbo Dragon Family Dinners,"2 Spring Rolls
+2 Fortune Cookies",0,0,
+F2b,Jumbo Dragon Family Dinners,Dinner for Two B,,30.95,"2 Spring Rolls
 Sesame Chicken
 Hunan Beef
 Chicken Fried Rice
-2 Fortune Cookies",,30.95,,1,0,
-181,F3a,Jumbo Dragon Family Dinners,"3 Egg Rolls
+2 Fortune Cookies",1,0,
+F3a,Jumbo Dragon Family Dinners,Dinner for Three A,,36.95,"3 Egg Rolls
 Sweet & Sour Chicken
 General Tso's Chicken
 Beef Vegetables & Almonds
 Chicken Fried Rice
-3 Fortune Cookies",,36.95,,1,0,
-182,F3b,Jumbo Dragon Family Dinners,"3 Spring Rolls
+3 Fortune Cookies",1,0,
+F3b,Jumbo Dragon Family Dinners,Dinner for Three B,,40.95,"3 Spring Rolls
 Chicken w. Garlic Sauce
 Sweet & Sour Chicken
 Beef w. Broccoli
 Chicken Fried Rice
-3 Fortune Cookies",,40.95,,1,0,
-183,F4a,Jumbo Dragon Family Dinners,"4 Egg Rolls
+3 Fortune Cookies",1,0,
+F4a,Jumbo Dragon Family Dinners,Dinner for For Four A,,48.95,"4 Egg Rolls
 Sesame Chicken
 Sweet & Sour Chicken
 Chicken Chow Mein
 Beef with Mushrooms
 Chicken Fried Rice
-4 Fortune Cookies",,48.95,,0,0,
-184,F4b,Jumbo Dragon Family Dinners,"4 Spring Rolls
+4 Fortune Cookies",0,0,
+F4b,Jumbo Dragon Family Dinners,Dinner for Four B,,52.95,"4 Spring Rolls
 Cantonese Chow Mein
 Sweet & Sour Chicken
 Kung Pao Chicken
 Beef Chow Mein
 Chicken Fried Rice
-4 Fortune Cookies",,52.95,,1,0,
-185,F5,Jumbo Dragon Family Dinners,"5 Egg Rolls
+4 Fortune Cookies",1,0,
+F5,Jumbo Dragon Family Dinners,Dinner for Five,,63.95,"5 Egg Rolls
 Sweet & Sour Chicken
 Sweet & Sour Shrimp
 Chicken Chow Mein
 Tai Dop Voy(L)
 General Tso's Chicken (L)
 House Special Fried Rice 
-5 Fortune Cookies",,63.95,,1,0,
-186,F6,Jumbo Dragon Family Dinners,"6 Egg Rolls
+5 Fortune Cookies",1,0,
+F6,Jumbo Dragon Family Dinners,Dinner for Five,,74.95,"6 Egg Rolls
 Sweet & Sour Chicken
 Sweet & Sour Shrimp
 Chicken Chow Mein
@@ -280,15 +279,15 @@ Kung Pao Beef
 Sesame Chicken (L)
 Cantonese Chow Mein (L)
 House Special Fried Rice (L)
-6 Fortune Cookies",,74.95,,1,0,
-187,O1,Take Out Party Special,Jar Doo Chicken Wing,,45,,0,0,
-188,O2,Take Out Party Special,Cantonese Chow Mein,,50,,0,0,
-189,O3,Take Out Party Special,Chicken or Beef Fried Rice,,38,,0,0,
-190,O4,Take Out Party Special,Chicken Lo Mein,,46,,0,0,
-191,O5,Take Out Party Special,Sesame or General Tso's Chicken,,50,,1,0,
-192,O6,Take Out Party Special,Sweet & Sour Chicken,,50,,0,0,
-193,X1,Side Order,Lemon Sauce,,1.5,,0,0,
-194,X2,Side Order,Honey Garlic Sauce,,1.5,,0,0,
-195,X3,Side Order,Curry Sauce,,1.5,,0,0,
-196,X4,Side Order,Sesame Sauce,,1.5,,0,0,
-197,X5,Side Order,General Tso's Sauce,,1.5,,0,0,
+6 Fortune Cookies",1,0,
+O1,Take Out Party Special,Jar Doo Chicken Wing,,45,,0,0,
+O2,Take Out Party Special,Cantonese Chow Mein,,50,,0,0,
+O3,Take Out Party Special,Chicken or Beef Fried Rice,,38,,0,0,
+O4,Take Out Party Special,Chicken Lo Mein,,46,,0,0,
+O5,Take Out Party Special,Sesame or General Tso's Chicken,,50,,1,0,
+O6,Take Out Party Special,Sweet & Sour Chicken,,50,,0,0,
+X1,Side Order,Lemon Sauce,,1.5,,0,0,
+X2,Side Order,Honey Garlic Sauce,,1.5,,0,0,
+X3,Side Order,Curry Sauce,,1.5,,0,0,
+X4,Side Order,Sesame Sauce,,1.5,,0,0,
+X5,Side Order,General Tso's Sauce,,1.5,,0,0,

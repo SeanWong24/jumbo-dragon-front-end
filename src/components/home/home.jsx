@@ -55,7 +55,7 @@ export function Home() {
   return (
     <Container>
       <Alert className="my-1 text-center" variant="danger">
-        FREE Delivery over $50 (before tax) in xxxxxxx Area
+        FREE Delivery over $50 (before tax) in Limited Area
       </Alert>
       <Carousel className="my-1">
         {["img33.jpg", "img34.jpg", "img35.jpg", "img36.jpg"].map(
@@ -73,11 +73,14 @@ export function Home() {
           <li>Sweet & Sour Wonton</li>
           <li>Crabmeat Cheese Wonton</li>
         </ul>
-        <p>with pick up order over $45.00 before tax, cash only</p>
-        <p>
-          * Except Mother's Day, Christmas Eve, New Year's Eve, New Year's Day
+        <p className="my-0">
+          with pick up order over $45.00 before tax, cash only
         </p>
-        <Button variant="primary">Learn more</Button>
+        <p className="my-0">
+          <small>
+            * Except Mother's Day, Christmas Eve, New Year's Eve, New Year's Day
+          </small>
+        </p>
       </Jumbotron>
       <Row id="info-section">
         <Col className="column my-1" xs={12} md={4}>
