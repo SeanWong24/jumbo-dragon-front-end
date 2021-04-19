@@ -7,7 +7,6 @@ import {
   Col,
   Card,
   Jumbotron,
-  Button,
   Alert
 } from "react-bootstrap";
 import { csvParse } from "d3-dsv";
