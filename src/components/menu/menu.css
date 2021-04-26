@@ -1,20 +1,23 @@
-#menu-container {
-  columns: 300px;
+.menu-item-card {
+  min-height: 115px;
 }
 
-.menu-card {
-  display: inline-block !important;
-  width: 100%;
+.menu-item-name {
+  font-weight: bold;
+  font-size: 13px;
 }
 
-.menu-item-code {
-  width: 30px;
-}
-
-.spicy-menu-item {
-  color: red;
+.menu-item-price {
+  font-size: 12px;
 }
 
 .menu-item-description {
+  font-size: 12px;
   color: grey;
+}
+
+.menu-item-detail-toggle {
+  font-size: 12px;
+  color: var(--primary);
+  cursor: pointer;
 }

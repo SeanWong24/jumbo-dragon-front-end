@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Accordion, Button, Container, Row, Col, Card } from "react-bootstrap";
 import { csvParse } from "d3-dsv";
 
 import "./menu.css";
@@ -29,42 +29,50 @@ export const Menu = () => {
   return (
     <Container id="menu-container">
       {Object.entries(menu || {}).map(([category, menuItems]) => (
-        <Card key={category} className="my-1 menu-card">
-          <Card.Header>
-            <b>{category}</b>
-          </Card.Header>
-          <Card.Body>
-            {menuItems.map((menuItem, i) => (
-              <Row
-                key={i}
-                className={+menuItem.spicyLevel ? " spicy-menu-item" : ""}
-              >
-                <Col className="mx-0" xs="auto">
-                  <label className="menu-item-code">{menuItem.code}</label>
-                </Col>
-                <Col className="mx-0">
-                  <label className={menuItem.description ? " mb-0" : ""}>
-                    {menuItem.name}
-                  </label>
-                  {menuItem.description && (
-                    <div>
-                      {menuItem.description
-                        .split("\n")
-                        .map((descriptionLine, i) => (
-                          <label key={i} className="mt-0 menu-item-description">
-                            {descriptionLine}
-                          </label>
-                        ))}
-                    </div>
-                  )}
-                </Col>
-                <Col className="mx-0" xs="auto">
-                  ${(+menuItem.price).toFixed(2)}
-                </Col>
-              </Row>
+        <div className="my-1" key={category}>
+          <h3>{category}</h3>
+          <hr className="mt-0" />
+          <Row>
+            {menuItems?.map((menuItem, i) => (
+              <Col key={i} xs={12} md={6} lg={4}>
+                <Accordion>
+                  <Card className="my-1 menu-item-card">
+                    <Card.Body>
+                      <Card.Text className="my-0 menu-item-name">
+                        {`${menuItem.code}. ${menuItem.name}`}
+                        {menuItem.spicyLevel > 0 && (
+                          <span role="img" aria-label="chill">
+                            🌶️
+                          </span>
+                        )}
+                      </Card.Text>
+                      <Card.Text className="my-0 menu-item-price">
+                        ${(+menuItem.price).toFixed(2)}
+                      </Card.Text>
+                      {menuItem.description && (
+                        <Accordion.Toggle
+                          className="my-0 menu-item-detail-toggle"
+                          as={Card.Text}
+                          variant="link"
+                          eventKey="1"
+                        >
+                          See details
+                        </Accordion.Toggle>
+                      )}
+                      {menuItem.description && (
+                        <Accordion.Collapse eventKey="1">
+                          <Card.Text className="menu-item-description">
+                            {menuItem.description}
+                          </Card.Text>
+                        </Accordion.Collapse>
+                      )}
+                    </Card.Body>
+                  </Card>
+                </Accordion>
+              </Col>
             ))}
-          </Card.Body>
-        </Card>
+          </Row>
+        </div>
       ))}
     </Container>
   );
