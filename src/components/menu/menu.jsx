@@ -61,9 +61,16 @@ export const Menu = () => {
                       )}
                       {menuItem.description && (
                         <Accordion.Collapse eventKey="1">
-                          <Card.Text className="menu-item-description">
-                            {menuItem.description}
-                          </Card.Text>
+                          <div>
+                            {menuItem.description.split("\n").map((line, i) => (
+                              <Card.Text
+                                key={i}
+                                className="my-0 menu-item-description"
+                              >
+                                {line}
+                              </Card.Text>
+                            ))}
+                          </div>
                         </Accordion.Collapse>
                       )}
                     </Card.Body>
