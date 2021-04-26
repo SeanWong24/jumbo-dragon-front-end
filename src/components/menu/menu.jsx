@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Accordion, Button, Container, Row, Col, Card } from "react-bootstrap";
+import { Accordion, Container, Row, Col, Card } from "react-bootstrap";
 import { csvParse } from "d3-dsv";
 
 import "./menu.css";
