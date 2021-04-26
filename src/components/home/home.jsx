@@ -83,40 +83,48 @@ export function Home() {
       </Jumbotron>
       <Row id="info-section">
         <Col className="column my-1" xs={12} md={4}>
-          <Card className="info-card">
-            <Card.Body className="text-center">
-              <Card.Title>Business Hours</Card.Title>
-              {businessHoursCsv?.map(({ day, start, end }) => (
-                <Card.Text key={day} className="my-0">
-                  {`${day}: ${start ? `${start} - ${end}` : "Closed"}`}
-                </Card.Text>
-              ))}
+          <Card className="info-card text-center">
+            <Card.Header>
+              <b>Business Hours</b>
+            </Card.Header>
+            <Card.Body className="align-items-center d-flex justify-content-center">
+              <div>
+                {businessHoursCsv?.map(({ day, start, end }) => (
+                  <Card.Text key={day} className="my-0">
+                    {`${day}: ${start ? `${start} - ${end}` : "Closed"}`}
+                  </Card.Text>
+                ))}
+              </div>
             </Card.Body>
           </Card>
         </Col>
         <Col className="column my-1" xs={12} md={4}>
-          <Card className="info-card">
-            <Card.Body className="text-center">
-              <Card.Title>Contact Us</Card.Title>
-              {address?.split("\n").map((addressLine) => (
-                <Card.Text key={addressLine} className="my-0">
-                  {addressLine}
-                </Card.Text>
-              ))}
-              <br />
-              <Card.Text>
-                <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
+          <Card className="info-card text-center">
+            <Card.Header>
+              <b>Contact Us</b>
+            </Card.Header>
+            <Card.Body className="align-items-center d-flex justify-content-center">
+              <div>
+                {address?.split("\n").map((addressLine) => (
+                  <Card.Text key={addressLine} className="my-0">
+                    {addressLine}
+                  </Card.Text>
+                ))}
                 <br />
-                <a href={`mailto:${emailAddress}`}>{emailAddress}</a>
-              </Card.Text>
+                <Card.Text>
+                  <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
+                  <br />
+                  <a href={`mailto:${emailAddress}`}>{emailAddress}</a>
+                </Card.Text>
+              </div>
             </Card.Body>
           </Card>
         </Col>
         <Col className="column my-1" xs={12} md={4}>
-          <Card className="info-card">
-            <Card.Body className="text-center">
-              <Card.Title>Find Us on Google Map</Card.Title>
-            </Card.Body>
+          <Card className="info-card text-center">
+            <Card.Header>
+              <b>Find Us on Google Map</b>
+            </Card.Header>
             <iframe
               title="map"
               src={googleMapEmbedUrl}
