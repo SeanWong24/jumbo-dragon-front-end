@@ -32,13 +32,8 @@ export const Menu = () => {
       setMenu(menu);
     }
     fetchAndSetMenu();
+    window.addEventListener("scroll", toggleBackToTopButton);
   }, []);
-
-  window.addEventListener("scroll", () =>
-    document
-      .querySelector("#back-to-top-button")
-      ?.classList.toggle("hide", window.scrollY <= 10)
-  );
 
   return (
     <Container id="menu-container">
@@ -125,3 +120,8 @@ export const Menu = () => {
     </Container>
   );
 };
+
+const toggleBackToTopButton = () =>
+  document
+    .querySelector("#back-to-top-button")
+    ?.classList.toggle("hide", window.scrollY <= 10);
