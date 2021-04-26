@@ -34,11 +34,11 @@ export const Menu = () => {
     fetchAndSetMenu();
   }, []);
 
-  window.addEventListener("scroll", () => {
+  window.addEventListener("scroll", () =>
     document
       .querySelector("#back-to-top-button")
-      .classList.toggle("hide", window.scrollY <= 10);
-  });
+      ?.classList.toggle("hide", window.scrollY <= 10)
+  );
 
   return (
     <Container id="menu-container">
