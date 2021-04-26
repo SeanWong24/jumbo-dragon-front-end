@@ -1,5 +1,13 @@
 import { useState, useEffect } from "react";
-import { Accordion, Container, Row, Col, Card } from "react-bootstrap";
+import {
+  Accordion,
+  Button,
+  Container,
+  Dropdown,
+  Row,
+  Col,
+  Card
+} from "react-bootstrap";
 import { csvParse } from "d3-dsv";
 
 import "./menu.css";
@@ -28,9 +36,37 @@ export const Menu = () => {
 
   return (
     <Container id="menu-container">
-      {Object.entries(menu || {}).map(([category, menuItems]) => (
-        <div className="my-1" key={category}>
-          <h3>{category}</h3>
+      <Dropdown className="my-1">
+        <Dropdown.Toggle variant="light">Jump to Category</Dropdown.Toggle>
+        <Dropdown.Menu>
+          {Object.keys(menu || {}).map((category, i) => (
+            <Dropdown.Item
+              key={i}
+              onClick={() =>
+                setTimeout(() =>
+                  document
+                    .querySelector(`#menu-category-${i}`)
+                    .scrollIntoView({ behavior: "smooth" })
+                )
+              }
+            >
+              {category}
+            </Dropdown.Item>
+          ))}
+        </Dropdown.Menu>
+      </Dropdown>
+      {Object.entries(menu || {}).map(([category, menuItems], i) => (
+        <div id={`menu-category-${i}`} className="my-1" key={i}>
+          <h3>
+            {category}
+            <Button
+              className="float-right"
+              variant="light"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            >
+              Back to Top
+            </Button>
+          </h3>
           <hr className="mt-0" />
           <Row>
             {menuItems?.map((menuItem, i) => (
