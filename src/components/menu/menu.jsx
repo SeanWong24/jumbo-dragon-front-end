@@ -13,6 +13,7 @@ import { csvParse } from "d3-dsv";
 import "./menu.css";
 
 export const Menu = () => {
+  const [isScrolledToTop, setIsScrolledToTop] = useState(window.scrollY <= 0);
   const [menu, setMenu] = useState();
   useEffect(() => {
     async function fetchAndSetMenu() {
@@ -34,8 +35,28 @@ export const Menu = () => {
     fetchAndSetMenu();
   }, []);
 
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 0) {
+      if (isScrolledToTop) {
+        setIsScrolledToTop(false);
+      }
+    } else {
+      if (!isScrolledToTop) {
+        setIsScrolledToTop(true);
+      }
+    }
+  });
+
   return (
     <Container id="menu-container">
+      <Button
+        id="back-to-top-button"
+        className={`float-right${isScrolledToTop > 0 ? " hide" : ""}`}
+        variant="light"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      >
+        Back to Top
+      </Button>
       <Dropdown className="my-1">
         <Dropdown.Toggle variant="light">Jump to Category</Dropdown.Toggle>
         <Dropdown.Menu>
@@ -57,16 +78,7 @@ export const Menu = () => {
       </Dropdown>
       {Object.entries(menu || {}).map(([category, menuItems], i) => (
         <div id={`menu-category-${i}`} className="my-1" key={i}>
-          <h3>
-            {category}
-            <Button
-              className="float-right"
-              variant="light"
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            >
-              Back to Top
-            </Button>
-          </h3>
+          <h3>{category}</h3>
           <hr className="mt-0" />
           <Row>
             {menuItems?.map((menuItem, i) => (
