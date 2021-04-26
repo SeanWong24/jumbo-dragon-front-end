@@ -13,7 +13,6 @@ import { csvParse } from "d3-dsv";
 import "./menu.css";
 
 export const Menu = () => {
-  const [isScrolledToTop, setIsScrolledToTop] = useState(window.scrollY <= 0);
   const [menu, setMenu] = useState();
   useEffect(() => {
     async function fetchAndSetMenu() {
@@ -36,22 +35,16 @@ export const Menu = () => {
   }, []);
 
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 0) {
-      if (isScrolledToTop) {
-        setIsScrolledToTop(false);
-      }
-    } else {
-      if (!isScrolledToTop) {
-        setIsScrolledToTop(true);
-      }
-    }
+    document
+      .querySelector("#back-to-top-button")
+      .classList.toggle("hide", window.scrollY <= 10);
   });
 
   return (
     <Container id="menu-container">
       <Button
         id="back-to-top-button"
-        className={`float-right${isScrolledToTop > 0 ? " hide" : ""}`}
+        className="float-right hide"
         variant="light"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
