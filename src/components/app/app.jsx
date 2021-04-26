@@ -46,7 +46,9 @@ export default function App() {
       </Route>
 
       <Navbar id="aaa" sticky="bottom" variant="light" bg="light">
-        <Navbar.Brand className="mx-auto">Jumbo Dragon Chinese Restaurant</Navbar.Brand>
+        <Navbar.Brand className="mx-auto footer-text">
+          Jumbo Dragon Chinese Restaurant | BrantFord
+        </Navbar.Brand>
       </Navbar>
     </div>
   );
