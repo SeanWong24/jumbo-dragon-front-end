@@ -45,25 +45,28 @@ export const Menu = () => {
       >
         Back to Top
       </Button>
-      <Dropdown className="my-1">
-        <Dropdown.Toggle variant="light">Jump to Category</Dropdown.Toggle>
-        <Dropdown.Menu>
-          {Object.keys(menu || {}).map((category, i) => (
-            <Dropdown.Item
-              key={i}
-              onClick={() =>
-                setTimeout(() =>
-                  document
-                    .querySelector(`#menu-category-${i}`)
-                    .scrollIntoView({ behavior: "smooth" })
-                )
-              }
-            >
-              {category}
-            </Dropdown.Item>
-          ))}
-        </Dropdown.Menu>
-      </Dropdown>
+      <h1>
+        Menu
+        <Dropdown className="my-1 float-right">
+          <Dropdown.Toggle variant="light">Jump to Category</Dropdown.Toggle>
+          <Dropdown.Menu>
+            {Object.keys(menu || {}).map((category, i) => (
+              <Dropdown.Item
+                key={i}
+                onClick={() =>
+                  setTimeout(() =>
+                    document
+                      .querySelector(`#menu-category-${i}`)
+                      .scrollIntoView({ behavior: "smooth" })
+                  )
+                }
+              >
+                {category}
+              </Dropdown.Item>
+            ))}
+          </Dropdown.Menu>
+        </Dropdown>
+      </h1>
       {Object.entries(menu || {}).map(([category, menuItems], i) => (
         <div id={`menu-category-${i}`} className="my-1" key={i}>
           <h3>{category}</h3>

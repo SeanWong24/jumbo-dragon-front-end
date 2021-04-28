@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import {
+  Button,
   Container,
   Carousel,
   Image,
@@ -53,9 +54,9 @@ export function Home() {
 
   return (
     <Container>
-      <Alert className="my-1 text-center" variant="danger">
-        FREE Delivery over $50 (before tax) in Limited Area
-      </Alert>
+      <Button href="#/menu" block>
+        Check Our Menu
+      </Button>
       <Carousel className="my-1">
         {["img33.jpg", "img34.jpg", "img35.jpg", "img36.jpg"].map(
           (imageName) => (
@@ -65,9 +66,9 @@ export function Home() {
           )
         )}
       </Carousel>
-      <Jumbotron className="my-1 py-3">
+      <Alert className="my-1 text-center" variant="warning">
         <h2>Free Choice of One</h2>
-        <ul>
+        <ul className="list-unstyled">
           <li>Jar Doo Chicken Wings</li>
           <li>Sweet & Sour Wonton</li>
           <li>Crabmeat Cheese Wonton</li>
@@ -80,7 +81,10 @@ export function Home() {
             * Except Mother's Day, Christmas Eve, New Year's Eve, New Year's Day
           </small>
         </p>
-      </Jumbotron>
+      </Alert>
+      <Alert className="my-1 text-center" variant="info">
+        FREE Delivery over $50 (before tax) in Limited Area
+      </Alert>
       <Row id="info-section">
         <Col className="column my-1" xs={12} md={4}>
           <Card className="info-card text-center">

@@ -1,4 +1,4 @@
-import { Nav, Navbar, Image } from "react-bootstrap";
+import { Navbar, Image } from "react-bootstrap";
 import { Route } from "react-router-dom";
 import { Home } from "../home/home";
 import { Menu } from "../menu/menu";
@@ -7,10 +7,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./app.css";
 
 export default function App() {
-  const navItems = [
-    { url: "/", name: "Home" },
-    { url: "/menu", name: "Menu" }
-  ];
+  // const navItems = [
+  //   { url: "/", name: "Home" },
+  //   { url: "/menu", name: "Menu" }
+  // ];
 
   return (
     <div className="App">
@@ -21,12 +21,12 @@ export default function App() {
         variant="light"
         bg="light"
       >
-        <Navbar.Brand className="text-center" id="logo">
+        <Navbar.Brand className="text-center" id="logo" href="#/">
           <Image fluid src="/logo.png"></Image>
         </Navbar.Brand>
         {/* <Navbar.Toggle /> */}
         {/* <Navbar.Collapse> */}
-        <Nav id="nav" defaultActiveKey={window.location.hash}>
+        {/* <Nav id="nav" defaultActiveKey={window.location.hash}>
           {navItems.map(({ url, name }) => (
             <Nav.Link key={name} href={`#${url}`}>
               <h4>
@@ -34,7 +34,7 @@ export default function App() {
               </h4>
             </Nav.Link>
           ))}
-        </Nav>
+        </Nav> */}
         {/* </Navbar.Collapse> */}
       </Navbar>
 
