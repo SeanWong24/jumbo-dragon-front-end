@@ -45,9 +45,9 @@ export default function App() {
         <Menu></Menu>
       </Route>
 
-      <Navbar id="aaa" sticky="bottom" variant="light" bg="light">
+      <Navbar id="aaa" sticky="bottom" variant="dark" bg="dark">
         <Navbar.Brand className="mx-auto footer-text">
-          Jumbo Dragon Chinese Restaurant | BrantFord
+          © 2021 Jumbo Dragon Chinese Restaurant | Brantford
         </Navbar.Brand>
       </Navbar>
     </div>

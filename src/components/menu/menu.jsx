@@ -6,7 +6,8 @@ import {
   Dropdown,
   Row,
   Col,
-  Card
+  Card,
+  Alert
 } from "react-bootstrap";
 import { csvParse } from "d3-dsv";
 
@@ -14,6 +15,7 @@ import "./menu.css";
 
 export const Menu = () => {
   const [menu, setMenu] = useState();
+  const [isShowAllergyAlert, setIsShowAllergyAlert] = useState(true);
   useEffect(() => {
     async function fetchAndSetMenu() {
       const businessHoursCsvFile = await (
@@ -40,15 +42,27 @@ export const Menu = () => {
       <Button
         id="back-to-top-button"
         className="float-right hide"
-        variant="light"
+        variant="secondary"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
         Back to Top
       </Button>
+      {isShowAllergyAlert && (
+        <Alert
+          className="my-1"
+          variant="danger"
+          onClose={() => setIsShowAllergyAlert(false)}
+          dismissible
+        >
+          Please notify us of any allergies you may have.
+        </Alert>
+      )}
       <h1>
         Menu
         <Dropdown className="my-1 float-right">
-          <Dropdown.Toggle variant="light">Jump to Category</Dropdown.Toggle>
+          <Dropdown.Toggle variant="secondary">
+            Jump to Category
+          </Dropdown.Toggle>
           <Dropdown.Menu>
             {Object.keys(menu || {}).map((category, i) => (
               <Dropdown.Item
@@ -78,10 +92,20 @@ export const Menu = () => {
                   <Card className="my-1 menu-item-card">
                     <Card.Body>
                       <Card.Text className="my-0 menu-item-name">
-                        {`${menuItem.code}. ${menuItem.name}`}
+                        {menuItem.code ? `${menuItem.code}. ` : ""}
+                        {menuItem.name}
                         {menuItem.spicyLevel > 0 && (
-                          <span role="img" aria-label="chill">
+                          <span role="img" aria-label="chill" title="Spicy">
                             🌶️
+                          </span>
+                        )}
+                        {menuItem.hasPeanuts > 0 && (
+                          <span
+                            role="img"
+                            aria-label="peanuts"
+                            title="Has Peanuts"
+                          >
+                            🥜
                           </span>
                         )}
                       </Card.Text>

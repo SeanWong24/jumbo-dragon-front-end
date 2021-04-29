@@ -7,7 +7,6 @@ import {
   Row,
   Col,
   Card,
-  Jumbotron,
   Alert
 } from "react-bootstrap";
 import { csvParse } from "d3-dsv";
@@ -54,27 +53,25 @@ export function Home() {
 
   return (
     <Container>
-      <Button href="#/menu" block>
-        Check Our Menu
+      <Button variant="dark" href="#/menu" block>
+        CHECK OUT OUR MENU
       </Button>
       <Carousel className="my-1">
-        {["img33.jpg", "img34.jpg", "img35.jpg", "img36.jpg"].map(
-          (imageName) => (
-            <Carousel.Item key={imageName} className="carousel-item">
-              <Image fluid src={`/assets/images/${imageName}`}></Image>
-            </Carousel.Item>
-          )
-        )}
+        {["img1.jpg"].map((imageName) => (
+          <Carousel.Item key={imageName} className="carousel-item">
+            <Image fluid src={`/assets/images/${imageName}`}></Image>
+          </Carousel.Item>
+        ))}
       </Carousel>
       <Alert className="my-1 text-center" variant="warning">
-        <h2>Free Choice of One</h2>
+        <h2>Get Free Choice of One</h2>
         <ul className="list-unstyled">
           <li>Jar Doo Chicken Wings</li>
           <li>Sweet & Sour Wonton</li>
           <li>Crabmeat Cheese Wonton</li>
         </ul>
         <p className="my-0">
-          with pick up order over $45.00 before tax, cash only
+          with pick up order over $45.00 (before tax), CASH ONLY
         </p>
         <p className="my-0">
           <small>
@@ -82,7 +79,7 @@ export function Home() {
           </small>
         </p>
       </Alert>
-      <Alert className="my-1 text-center" variant="info">
+      <Alert className="my-1 text-center" variant="success">
         FREE Delivery over $50 (before tax) in Limited Area
       </Alert>
       <Row id="info-section">
