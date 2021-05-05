@@ -1,16 +1,27 @@
 import { Navbar, Image } from "react-bootstrap";
-import { Route } from "react-router-dom";
+import { Route, useHistory } from "react-router-dom";
+import { useEffect } from "react";
+// import ReactGA from "react-ga";
 import { Home } from "../home/home";
 import { Menu } from "../menu/menu";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./app.css";
 
+const navItems = [
+  { url: "/", name: "Home" },
+  { url: "/menu", name: "Menu" }
+];
+
 export default function App() {
-  // const navItems = [
-  //   { url: "/", name: "Home" },
-  //   { url: "/menu", name: "Menu" }
-  // ];
+
+  const history = useHistory();
+  useEffect(() => {
+    sendToGoogleAnalytics(history.location);
+    history.listen(location => {
+      sendToGoogleAnalytics(location);
+    })
+  }, [history]);
 
   return (
     <div className="App">
@@ -52,4 +63,10 @@ export default function App() {
       </Navbar>
     </div>
   );
+}
+
+function sendToGoogleAnalytics(location) {
+  const pagePath = location.pathname || window.location.pathname;
+  const pageTitle = navItems.find(item => item.url === pagePath)?.name;
+  gtag('config', 'G-2SG6Y80TH9', { page_path: pagePath, page_title: pageTitle });
 }
