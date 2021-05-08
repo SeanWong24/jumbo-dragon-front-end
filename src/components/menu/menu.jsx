@@ -82,67 +82,73 @@ export const Menu = () => {
         </Dropdown>
       </h1>
       {Object.entries(menu || {}).map(([category, menuItems], i) => (
-        <div id={`menu-category-${i}`} className="my-1" key={i}>
-          <h3>{category}</h3>
-          <hr className="mt-0" />
-          <Row>
-            {menuItems?.map((menuItem, i) => (
-              <Col key={i} xs={12} md={6} lg={4}>
-                <Accordion>
-                  <Card className="my-1 menu-item-card">
-                    <Card.Body>
-                      <Card.Text className="my-0 menu-item-name">
-                        {menuItem.code ? `${menuItem.code}. ` : ""}
-                        {menuItem.name}
-                        {menuItem.spicyLevel > 0 && (
-                          <span role="img" aria-label="chill" title="Spicy">
-                            🌶️
-                          </span>
-                        )}
-                        {menuItem.hasPeanuts > 0 && (
-                          <span
-                            role="img"
-                            aria-label="peanuts"
-                            title="Has Peanuts"
-                          >
-                            🥜
-                          </span>
-                        )}
-                      </Card.Text>
-                      <Card.Text className="my-0 menu-item-price">
-                        ${(+menuItem.price).toFixed(2)}
-                      </Card.Text>
-                      {menuItem.description && (
-                        <Accordion.Toggle
-                          className="my-0 menu-item-detail-toggle"
-                          as={Card.Text}
-                          variant="link"
-                          eventKey="1"
-                        >
-                          See details
-                        </Accordion.Toggle>
-                      )}
-                      {menuItem.description && (
-                        <Accordion.Collapse eventKey="1">
-                          <div>
-                            {menuItem.description.split("\n").map((line, i) => (
-                              <Card.Text
-                                key={i}
-                                className="my-0 menu-item-description"
+        <Accordion id={`menu-category-${i}`}>
+          <div className="my-1" key={i}>
+            <Accordion.Toggle as={Button} variant="link" eventKey="0">
+              <h3>{category}</h3>
+            </Accordion.Toggle>
+            <hr className="mt-0" />
+            <Accordion.Collapse eventKey="0">
+              <Row>
+                {menuItems?.map((menuItem, i) => (
+                  <Col key={i} xs={12} md={6} lg={4}>
+                    <Accordion>
+                      <Card className="my-1 menu-item-card">
+                        <Card.Body>
+                          <Card.Text className="my-0 menu-item-name">
+                            {menuItem.code ? `${menuItem.code}. ` : ""}
+                            {menuItem.name}
+                            {menuItem.spicyLevel > 0 && (
+                              <span role="img" aria-label="chill" title="Spicy">
+                                🌶️
+                              </span>
+                            )}
+                            {menuItem.hasPeanuts > 0 && (
+                              <span
+                                role="img"
+                                aria-label="peanuts"
+                                title="Has Peanuts"
                               >
-                                {line}
-                              </Card.Text>
-                            ))}
-                          </div>
-                        </Accordion.Collapse>
-                      )}
-                    </Card.Body>
-                  </Card>
-                </Accordion>
-              </Col>
-            ))}
-          </Row>
-        </div>
+                                🥜
+                              </span>
+                            )}
+                          </Card.Text>
+                          <Card.Text className="my-0 menu-item-price">
+                            ${(+menuItem.price).toFixed(2)}
+                          </Card.Text>
+                          {menuItem.description && (
+                            <Accordion.Toggle
+                              className="my-0 menu-item-detail-toggle"
+                              as={Card.Text}
+                              variant="link"
+                              eventKey="1"
+                            >
+                              See details
+                            </Accordion.Toggle>
+                          )}
+                          {menuItem.description && (
+                            <Accordion.Collapse eventKey="1">
+                              <div>
+                                {menuItem.description.split("\n").map((line, i) => (
+                                  <Card.Text
+                                    key={i}
+                                    className="my-0 menu-item-description"
+                                  >
+                                    {line}
+                                  </Card.Text>
+                                ))}
+                              </div>
+                            </Accordion.Collapse>
+                          )}
+                        </Card.Body>
+                      </Card>
+                    </Accordion>
+                  </Col>
+                ))}
+              </Row>
+            </Accordion.Collapse>
+          </div>
+        </Accordion>
       ))}
     </Container>
   );
