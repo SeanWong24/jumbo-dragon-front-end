@@ -15,7 +15,7 @@ import "./menu.css";
 
 export const Menu = () => {
   const [menu, setMenu] = useState();
-  const [isShowAllergyAlert, setIsShowAllergyAlert] = useState(true);
+  const [shouldShowAllergyAlert, setIsShowAllergyAlert] = useState(true);
   useEffect(() => {
     async function fetchAndSetMenu() {
       const businessHoursCsvFile = await (
@@ -47,7 +47,7 @@ export const Menu = () => {
       >
         Back to Top
       </Button>
-      {isShowAllergyAlert && (
+      {shouldShowAllergyAlert && (
         <Alert
           className="my-1"
           variant="danger"
