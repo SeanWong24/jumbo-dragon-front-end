@@ -17,10 +17,12 @@ export default function App() {
 
   const history = useHistory();
   useEffect(() => {
-    sendToGoogleAnalytics(history.location);
-    history.listen(location => {
-      sendToGoogleAnalytics(location);
-    })
+    if (location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {
+      sendToGoogleAnalytics(history.location);
+      history.listen(location => {
+        sendToGoogleAnalytics(location);
+      });
+    }
   }, [history]);
 
   return (
