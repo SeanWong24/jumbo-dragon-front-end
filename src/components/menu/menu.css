@@ -22,6 +22,14 @@
   cursor: pointer;
 }
 
+.menu-category-header {
+  cursor: pointer;
+}
+
+.menu-category-header:hover {
+  color: var(--primary);
+}
+
 #back-to-top-button {
   position: fixed;
   bottom: 20px;
