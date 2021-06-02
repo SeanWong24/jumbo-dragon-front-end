@@ -57,7 +57,7 @@ export function Home() {
         CHECK OUT OUR MENU
       </Button>
       <Carousel className="my-1">
-        {["img1.jpg"].map((imageName) => (
+        {["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg"].map((imageName) => (
           <Carousel.Item key={imageName} className="carousel-item">
             <Image fluid src={`/assets/images/${imageName}`}></Image>
           </Carousel.Item>
