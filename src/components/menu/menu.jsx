@@ -57,7 +57,7 @@ export const Menu = () => {
         .sort((a, b) => menuCategoryOrder.indexOf(a[0]) - menuCategoryOrder.indexOf(b[0]))
         .map(([category, menuItems], i) => (
           <Accordion id={`menu-category-${i}`} key={i}>
-            <Card className="my-1">
+            <Card className="my-1" border="dark">
               <Accordion.Toggle className="menu-category-header" as={Card.Header} variant="link" eventKey="0">
                 <h5>{category}</h5>
               </Accordion.Toggle>
@@ -67,7 +67,7 @@ export const Menu = () => {
                     {menuItems?.map((menuItem, i) => (
                       <Col key={i} xs={12} md={6} lg={4}>
                         <Accordion>
-                          <Card className="my-1 menu-item-card">
+                          <Card className="my-1 menu-item-card" border="dark">
                             <Card.Body>
                               <Card.Text className="my-0 menu-item-name">
                                 {menuItem.code ? `${menuItem.code}. ` : ""}
@@ -97,7 +97,7 @@ export const Menu = () => {
                                   variant="link"
                                   eventKey="1"
                                 >
-                                  See details
+                                  Details+
                                 </Accordion.Toggle>
                               )}
                               {menuItem.description && (
