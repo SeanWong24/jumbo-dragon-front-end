@@ -63,7 +63,7 @@ export function Home() {
           </Carousel.Item>
         ))}
       </Carousel>
-      <Alert className="my-1 text-center" variant="warning">
+      <Alert className="my-1 text-center" variant="primary">
         <h2>Get Free Choice of One</h2>
         <ul className="list-unstyled">
           <li>Jar Doo Chicken Wings</li>
