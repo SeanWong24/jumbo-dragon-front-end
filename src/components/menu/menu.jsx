@@ -8,7 +8,6 @@ import {
   Card,
   Alert
 } from "react-bootstrap";
-import { csvParse } from "d3-dsv";
 
 import "./menu.css";
 
@@ -19,10 +18,12 @@ export const Menu = () => {
   useEffect(() => {
     async function fetchAndSetMenu() {
       setMenuCategoryOrder(await (await (await fetch("/assets/menu-category-order.txt")).text()).split('\n'));
-      const menuCsvFile = await (
-        await fetch("/assets/menu.csv")
-      ).text();
-      const menuItems = csvParse(menuCsvFile);
+
+      let menuItems = await (await (fetch("/assets/menu.json"))).json();
+      try {
+        menuItems = await (await (fetch("http://localhost:5000/menu/item"))).json();
+      } catch (error) { }
+
       const menu = {};
       for (const menuItem of menuItems) {
         const menuItemsInCategory = menu[menuItem.category];
