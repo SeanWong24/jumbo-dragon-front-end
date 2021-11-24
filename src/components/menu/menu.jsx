@@ -20,9 +20,9 @@ export const Menu = () => {
       setMenuCategoryOrder(await (await (await fetch("/assets/menu-category-order.txt")).text()).split('\n'));
 
       let menuItems = await (await (fetch("/assets/menu.json"))).json();
-      try {
-        menuItems = await (await (fetch("http://localhost:5000/menu/item"))).json();
-      } catch (error) { }
+      // try {
+      //   menuItems = await (await (fetch("http://localhost:5000/menu/item"))).json();
+      // } catch (error) { }
 
       const menu = {};
       for (const menuItem of menuItems) {
