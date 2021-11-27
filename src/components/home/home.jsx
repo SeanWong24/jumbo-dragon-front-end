@@ -9,43 +9,50 @@ import {
   Card,
   Alert
 } from "react-bootstrap";
-import { csvParse } from "d3-dsv";
 
 import "./home.css";
 
 export function Home() {
-  const [businessHoursCsv, setBusinessHoursCsv] = useState();
+  const [businessHoursJson, setBusinessHoursJson] = useState();
   const [address, setAddress] = useState();
   const [phoneNumber, setPhoneNumber] = useState();
   const [emailAddress, setEmailAdress] = useState();
   const [googleMapEmbedUrl, setGoogleMapEmbedUrl] = useState();
   useEffect(() => {
-    async function fetchAndSetBusinessHoursCsv() {
-      const businessHoursCsvFile = await (
-        await fetch("/assets/business-hours.csv")
-      ).text();
-      setBusinessHoursCsv(csvParse(businessHoursCsvFile));
+    async function fetchAndSetBusinessHoursJson() {
+      const businessHoursJsonFile = await (
+        await fetch("/assets/business-info.json").then(x => x.json())
+      ).businessHours;
+      setBusinessHoursJson(businessHoursJsonFile);
     }
-    fetchAndSetBusinessHoursCsv();
+    fetchAndSetBusinessHoursJson();
 
     async function fetchAndSetAddress() {
-      setAddress(await (await fetch("/assets/address.txt")).text());
+      setAddress(await (
+        await fetch("/assets/business-info.json").then(x => x.json())
+      ).address);
     }
     fetchAndSetAddress();
 
     async function fetchAndSetPhoneNumber() {
-      setPhoneNumber(await (await fetch("/assets/phone-number.txt")).text());
+      setPhoneNumber(await (
+        await fetch("/assets/business-info.json").then(x => x.json())
+      ).phoneNumber);
     }
     fetchAndSetPhoneNumber();
 
-    async function fetchAndSetEmailAdress() {
-      setEmailAdress(await (await fetch("/assets/email-address.txt")).text());
-    }
-    fetchAndSetEmailAdress();
+    // async function fetchAndSetEmailAddress() {
+    //   setEmailAdress(await (
+    //     await fetch("/assets/business-info.json").then(x => x.json())
+    //   ).emailAddress);
+    // }
+    // fetchAndSetEmailAdress();
 
     async function fetchAndSetGoogleMapEmbedUrl() {
       setGoogleMapEmbedUrl(
-        await (await fetch("/assets/google-map-embed-url.txt")).text()
+        await (
+          await fetch("/assets/business-info.json").then(x => x.json())
+        ).googleMapEmbedUrl
       );
     }
     fetchAndSetGoogleMapEmbedUrl();
@@ -90,9 +97,9 @@ export function Home() {
             </Card.Header>
             <Card.Body className="align-items-center d-flex justify-content-center">
               <div>
-                {businessHoursCsv?.map(({ day, start, end }) => (
+                {businessHoursJson?.map(({ day, from, to }) => (
                   <Card.Text key={day} className="my-0">
-                    {`${day}: ${start ? `${start} - ${end}` : "Closed"}`}
+                    {`${day}: ${from ? `${from} - ${to}` : "Closed"}`}
                   </Card.Text>
                 ))}
               </div>
