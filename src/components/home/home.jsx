@@ -70,10 +70,10 @@ export function Home() {
           </Carousel.Item>
         ))}
       </Carousel>
-      <Alert className="my-1 text-center" variant="primary">
+      <Alert className="my-1 text-center" variant="danger">
         <h2>Get Free Choice of One</h2>
         <ul className="list-unstyled">
-          <li>Jar Doo Chicken Wings</li>
+          {/* <li>Jar Doo Chicken Wings</li> */}
           <li>Sweet & Sour Wonton</li>
           <li>Crabmeat Cheese Wonton</li>
         </ul>
