@@ -2024,7 +2024,7 @@
     "imageUrl": ""
   },
   {
-    "code": "T1",
+    "code": "",
     "category": "Take Out Party Special",
     "name": "Jar Doo Chicken Wing",
     "shortName": "",
@@ -2035,7 +2035,7 @@
     "imageUrl": ""
   },
   {
-    "code": "T2",
+    "code": "",
     "category": "Take Out Party Special",
     "name": "Cantonese Chow Mein",
     "shortName": "",
@@ -2046,7 +2046,7 @@
     "imageUrl": ""
   },
   {
-    "code": "T3",
+    "code": "",
     "category": "Take Out Party Special",
     "name": "Chicken or Beef Fried Rice",
     "shortName": "",
@@ -2057,7 +2057,7 @@
     "imageUrl": ""
   },
   {
-    "code": "T4",
+    "code": "",
     "category": "Take Out Party Special",
     "name": "Chicken Lo Mein",
     "shortName": "",
@@ -2068,7 +2068,7 @@
     "imageUrl": ""
   },
   {
-    "code": "T5",
+    "code": "",
     "category": "Take Out Party Special",
     "name": "Sesame or General Tso's Chicken",
     "shortName": "",
@@ -2079,7 +2079,7 @@
     "imageUrl": ""
   },
   {
-    "code": "T6",
+    "code": "",
     "category": "Take Out Party Special",
     "name": "Sweet & Sour Chicken",
     "shortName": "",
@@ -2090,7 +2090,7 @@
     "imageUrl": ""
   },
   {
-    "code": "X1",
+    "code": "",
     "category": "Side Order",
     "name": "Lemon Sauce",
     "shortName": "",
@@ -2101,7 +2101,7 @@
     "imageUrl": ""
   },
   {
-    "code": "X2",
+    "code": "",
     "category": "Side Order",
     "name": "Honey Garlic Sauce",
     "shortName": "",
@@ -2112,7 +2112,7 @@
     "imageUrl": ""
   },
   {
-    "code": "X3",
+    "code": "",
     "category": "Side Order",
     "name": "Curry Sauce",
     "shortName": "",
@@ -2123,7 +2123,7 @@
     "imageUrl": ""
   },
   {
-    "code": "X4",
+    "code": "",
     "category": "Side Order",
     "name": "Sesame Sauce",
     "shortName": "",
@@ -2134,7 +2134,7 @@
     "imageUrl": ""
   },
   {
-    "code": "X5",
+    "code": "",
     "category": "Side Order",
     "name": "General Tso's Sauce",
     "shortName": "",
