@@ -18,6 +18,7 @@ export function Home() {
   const [phoneNumber, setPhoneNumber] = useState();
   const [emailAddress, setEmailAdress] = useState();
   const [googleMapEmbedUrl, setGoogleMapEmbedUrl] = useState();
+  const [shouldShowNewsAlert, setIsShowNewsAlert] = useState(true);
   useEffect(() => {
     async function fetchAndSetBusinessHoursJson() {
       const businessHoursJsonFile = await (
@@ -60,6 +61,17 @@ export function Home() {
 
   return (
     <Container>
+      {shouldShowNewsAlert && <Alert
+        className="news text-center"
+        variant="info"
+        onClose={() => setIsShowNewsAlert(false)}
+        dismissible
+      >
+        <h5><ul className="list-unstyled">
+          <li>Christmas Eve Hour: 12:00 PM - 8 PM</li>
+          <li>We are closed on Christmas Day</li>
+        </ul></h5>
+      </Alert>}
       <Button variant="dark" href="#/menu" block>
         CHECK OUT OUR MENU
       </Button>
@@ -72,22 +84,20 @@ export function Home() {
       </Carousel>
       <Alert className="my-1 text-center" variant="danger">
         <h2>Get Free Choice of One</h2>
-        <ul className="list-unstyled">
+        <h5><ul className="list-unstyled">
           {/* <li>Jar Doo Chicken Wings</li> */}
           <li>Sweet & Sour Wonton</li>
           <li>Crabmeat Cheese Wonton</li>
-        </ul>
+        </ul></h5>
         <p className="my-0">
-          with pick up order over $45.00 (before tax), CASH ONLY
+          <h5>with pick up order over $45.00 (before tax), CASH ONLY</h5>
         </p>
         <p className="my-0">
-          <small>
-            * Except Mother's Day, Christmas Eve, New Year's Eve, New Year's Day
-          </small>
+          * Except Mother's Day, Christmas Eve, New Year's Eve, New Year's Day
         </p>
       </Alert>
       <Alert className="my-1 text-center" variant="success">
-        FREE Delivery over $50 (before tax) in Limited Area
+        <h5>FREE Delivery over $50 (before tax) in Limited Area</h5>
       </Alert>
       <Row id="info-section">
         <Col className="column my-1" xs={12} md={4}>
