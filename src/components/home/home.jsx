@@ -65,7 +65,7 @@ export function Home() {
         className="news text-center"
         variant="info"
         onClose={() => setIsShowNewsAlert(false)}
-        dismissible
+        // dismissible
       >
         <h5><ul className="list-unstyled">
           <li>Christmas Eve Hour: 12 PM - 8 PM</li>
