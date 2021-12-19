@@ -68,7 +68,7 @@ export function Home() {
         dismissible
       >
         <h5><ul className="list-unstyled">
-          <li>Christmas Eve Hour: 12:00 PM - 8 PM</li>
+          <li>Christmas Eve Hour: 12 PM - 8 PM</li>
           <li>We are closed on Christmas Day</li>
         </ul></h5>
       </Alert>}
