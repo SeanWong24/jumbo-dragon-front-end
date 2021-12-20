@@ -1,0 +1,117 @@
+[
+    {
+        "name": "Lunch Special",
+        "shortDescription": "11am - 3pm $7.95, after 3pm $1.50 extra",
+        "longDescription": "All dishes served with Chicken Fried Rice or White Rice. Free choice of Soda or Egg Roll"
+    },
+    {
+        "name": "Combination Platters",
+        "shortDescription": "",
+        "longDescription": "Extra charge for substitution or sauce on side"
+    },
+    {
+        "name": "Jumbo Dragon Specialities",
+        "shortDescription": "with White Rice",
+        "longDescription": ""
+    },
+    {
+        "name": "Jumbo Dragon Family Dinners",
+        "shortDescription": "",
+        "longDescription": "Extra charge for substitutions"
+    },
+    {
+        "name": "Appetizers",
+        "shortDescription": "",
+        "longDescription": ""
+    },
+    {
+        "name": "Soup",
+        "shortDescription": "with Crispy Noodles",
+        "longDescription": ""
+    },
+    {
+        "name": "Sweet & Sour",
+        "shortDescription": "Breaded",
+        "longDescription": ""
+    },
+    {
+        "name": "Fried Rice",
+        "shortDescription": "",
+        "longDescription": ""
+    },
+    {
+        "name": "Chop Suey & Chow Mein",
+        "shortDescription": "with side Dry Noodles",
+        "longDescription": "A medley of Bean sprouts, Celery and Onions"
+    },
+    {
+        "name": "Curry Dishs",
+        "shortDescription": "",
+        "longDescription": ""
+    },
+    {
+        "name": "Shanghai Noodle",
+        "shortDescription": "Thick Soft Noodles",
+        "longDescription": ""
+    },
+    {
+        "name": "Mein Feng or Ho Feng",
+        "shortDescription": "Thin Rice Noodle or Flat Rice Noodle",
+        "longDescription": ""
+    },
+    {
+        "name": "Lo Mein",
+        "shortDescription": "Thick Soft Noodles",
+        "longDescription": ""
+    },
+    {
+        "name": "Cantonese Egg Noodles",
+        "shortDescription": "Thin Egg Noodles",
+        "longDescription": ""
+    },
+    {
+        "name": "Roast Pork or Beef",
+        "shortDescription": "",
+        "longDescription": ""
+    },
+    {
+        "name": "Chicken",
+        "shortDescription": "",
+        "longDescription": ""
+    },
+    {
+        "name": "Seafood",
+        "shortDescription": "",
+        "longDescription": ""
+    },
+    {
+        "name": "Egg Foo Young",
+        "shortDescription": "",
+        "longDescription": ""
+    },
+    {
+        "name": "Moo Shu Dishes",
+        "shortDescription": "",
+        "longDescription": ""
+    },
+    {
+        "name": "Special Diet Plates",
+        "shortDescription": "",
+        "longDescription": "NO salt, NO Fat and NO Cholesterol. Sauce on side"
+    },
+    {
+        "name": "Vegetable & Tofu",
+        "shortDescription": "",
+        "longDescription": ""
+    },
+    {
+        "name": "Take Out Party Special",
+        "shortDescription": "",
+        "longDescription": ""
+    },
+    {
+        "name": "Side Order",
+        "shortDescription": "",
+        "longDescription": ""
+    }
+]

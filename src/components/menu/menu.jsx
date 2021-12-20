@@ -13,6 +13,8 @@ import "./menu.css";
 
 export const Menu = () => {
   const [menu, setMenu] = useState();
+  const [menuShortDescription, setMenuShortDescription] = useState();
+  const [menuLongDescription, setMenuLongDescription] = useState();
   const [menuCategoryOrder, setMenuCategoryOrder] = useState([]);
   const [shouldShowAllergyAlert, setIsShowAllergyAlert] = useState(true);
   useEffect(() => {
@@ -23,6 +25,17 @@ export const Menu = () => {
       // try {
       //   menuItems = await (await (fetch("http://localhost:5000/menu/item"))).json();
       // } catch (error) { }
+
+      let menuCategories = await (await (fetch("/assets/menu-category-info.json"))).json();
+      const menuShortDescription = {};
+      const menuLongDescription = {};
+
+      for (const category of menuCategories) {
+        menuShortDescription[category.name] = category.shortDescription
+        menuLongDescription[category.name] = category.longDescription
+      }
+      setMenuShortDescription(menuShortDescription)
+      setMenuLongDescription(menuLongDescription)
 
       const menu = {};
       for (const menuItem of menuItems) {
@@ -47,7 +60,11 @@ export const Menu = () => {
           onClose={() => setIsShowAllergyAlert(false)}
           dismissible
         >
-          Please notify us of any allergies you may have.
+          <ul>
+            <li>Please notify us of any allergies you may have.</li>
+            <li>Any unlisted order or side order may be made by request.</li>
+            <li>You can choose your 🌶️ level: Mild, Medium, Very Spicy or Non-spicy.</li>
+          </ul>
         </Alert>
       )}
       <h1>
@@ -60,10 +77,17 @@ export const Menu = () => {
           <Accordion id={`menu-category-${i}`} key={i}>
             <Card className="my-1" border="dark">
               <Accordion.Toggle className="menu-category-header" as={Card.Header} variant="link" eventKey="0">
-                <h5>{category}</h5>
+                {category} {menuShortDescription[category] && menuShortDescription[category] !== "" && (
+                  <small>({menuShortDescription[category]})</small>
+                )}
               </Accordion.Toggle>
               <Accordion.Collapse eventKey="0">
                 <Card.Body>
+                  {menuLongDescription[category] && menuLongDescription[category] !== "" && (
+                    <Alert className="cat-info" variant="dark">
+                      {menuLongDescription[category]}
+                    </Alert>
+                  )}
                   <Row>
                     {menuItems?.map((menuItem, i) => (
                       <Col key={i} xs={12} md={6} lg={4}>
