@@ -61,7 +61,7 @@ export function Home() {
 
   return (
     <Container>
-      {shouldShowNewsAlert && <Alert
+      {/* {shouldShowNewsAlert && <Alert
         className="news text-center"
         variant="info"
         onClose={() => setIsShowNewsAlert(false)}
@@ -71,7 +71,7 @@ export function Home() {
           <li>Christmas Eve Hour: 12 PM - 8 PM</li>
           <li>We are closed on Christmas Day</li>
         </ul></h5>
-      </Alert>}
+      </Alert>} */}
       <Button variant="dark" href="#/menu" block>
         CHECK OUT OUR MENU
       </Button>
