@@ -17,12 +17,18 @@ export function Home() {
   const [address, setAddress] = useState();
   const [phoneNumber, setPhoneNumber] = useState();
   const [emailAddress, setEmailAdress] = useState();
+  const [news, setNews] = useState();
   const [googleMapEmbedUrl, setGoogleMapEmbedUrl] = useState();
   const [shouldShowNewsAlert, setIsShowNewsAlert] = useState(true);
   useEffect(() => {
+
+    async function fetchBusinessInfo() {
+      return fetch("/assets/business-info.json").then(x => x.json())
+    }
+
     async function fetchAndSetBusinessHoursJson() {
       const businessHoursJsonFile = await (
-        await fetch("/assets/business-info.json").then(x => x.json())
+        await fetchBusinessInfo()
       ).businessHours;
       setBusinessHoursJson(businessHoursJsonFile);
     }
@@ -30,29 +36,29 @@ export function Home() {
 
     async function fetchAndSetAddress() {
       setAddress(await (
-        await fetch("/assets/business-info.json").then(x => x.json())
+        await fetchBusinessInfo()
       ).address);
     }
     fetchAndSetAddress();
 
     async function fetchAndSetPhoneNumber() {
       setPhoneNumber(await (
-        await fetch("/assets/business-info.json").then(x => x.json())
+        await fetchBusinessInfo()
       ).phoneNumber);
     }
     fetchAndSetPhoneNumber();
 
-    // async function fetchAndSetEmailAddress() {
-    //   setEmailAdress(await (
-    //     await fetch("/assets/business-info.json").then(x => x.json())
-    //   ).emailAddress);
-    // }
-    // fetchAndSetEmailAdress();
+    async function fetchAndSetNews() {
+      setNews(await (
+        await fetchBusinessInfo()
+      ).news);
+    }
+    fetchAndSetNews();
 
     async function fetchAndSetGoogleMapEmbedUrl() {
       setGoogleMapEmbedUrl(
         await (
-          await fetch("/assets/business-info.json").then(x => x.json())
+          await fetchBusinessInfo()
         ).googleMapEmbedUrl
       );
     }
@@ -61,17 +67,13 @@ export function Home() {
 
   return (
     <Container>
-      {/* {shouldShowNewsAlert && <Alert
+      {shouldShowNewsAlert && news && news !== "" && <Alert
         className="news text-center"
         variant="info"
         onClose={() => setIsShowNewsAlert(false)}
-        // dismissible
       >
-        <h5><ul className="list-unstyled">
-          <li>Christmas Eve Hour: 12 PM - 8 PM</li>
-          <li>We are closed on Christmas Day</li>
-        </ul></h5>
-      </Alert>} */}
+        {news}
+      </Alert>}
       <Button variant="dark" href="#/menu" block>
         CHECK OUT OUR MENU
       </Button>
