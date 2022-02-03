@@ -67,15 +67,6 @@ export function Home() {
 
   return (
     <Container>
-      {shouldShowNewsAlert && <Alert
-        className="news text-center"
-        variant="info"
-        onClose={() => setIsShowNewsAlert(false)}
-      >
-        <h5>
-        We are closed on Feb 1st. HAPPY LUNAR NEW YEAR!
-        </h5>
-      </Alert>}
       <Button variant="dark" href="#/menu" block>
         CHECK OUT OUR MENU
       </Button>
