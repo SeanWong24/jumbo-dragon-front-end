@@ -23,8 +23,8 @@
         },
         {
             "day": "Friday",
-            "from": "12:00 PM",
-            "to": "10 PM"
+            "from": "11:00 AM",
+            "to": "10:00 PM"
         },
         {
             "day": "Saturday",
@@ -33,7 +33,7 @@
         },
         {
             "day": "Sunday",
-            "from": "11:00 AM",
+            "from": "12:00 PM",
             "to": "9:30 PM"
         }
     ],
