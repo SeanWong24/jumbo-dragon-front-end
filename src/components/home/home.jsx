@@ -93,14 +93,14 @@ export function Home() {
           <li>Crabmeat Cheese Wonton</li>
         </ul></h5>
         <p className="my-0">
-          <h5>with pick up order over $45.00 (before tax), CASH ONLY</h5>
+          <h5>with pick up order over $50.00 (before tax), CASH ONLY</h5>
         </p>
         <p className="my-0">
           * Except Mother's Day, Christmas Eve, New Year's Eve, New Year's Day
         </p>
       </Alert>
       <Alert className="my-1 text-center" variant="success">
-        <h5>FREE Delivery over $50 (before tax) in Limited Area</h5>
+        <h5>FREE Delivery over $55 (before tax) in Limited Area</h5>
       </Alert>
       <Row id="info-section">
         <Col className="column my-1" xs={12} md={4}>
