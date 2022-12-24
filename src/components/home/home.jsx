@@ -67,6 +67,14 @@ export function Home() {
 
   return (
     <Container>
+      {shouldShowNewsAlert && <Alert
+        className="news text-center"
+        variant="info"
+        onClose={() => setIsShowNewsAlert(false)}
+        // dismissible
+      >
+        <h5>{news}</h5>
+      </Alert>}
       <Button variant="dark" href="#/menu" block>
         CHECK OUT OUR MENU
       </Button>
