@@ -60,7 +60,7 @@ export default function App() {
 
       <Navbar id="aaa" sticky="bottom" variant="dark" bg="dark">
         <Navbar.Brand className="mx-auto footer-text">
-          © 2021 Jumbo Dragon Chinese Restaurant | Brantford
+          © 2023 Jumbo Dragon Chinese Restaurant | Brantford
         </Navbar.Brand>
       </Navbar>
     </div>
