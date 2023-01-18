@@ -19,7 +19,7 @@ export function Home() {
   const [emailAddress, setEmailAdress] = useState();
   const [news, setNews] = useState();
   const [googleMapEmbedUrl, setGoogleMapEmbedUrl] = useState();
-  const [shouldShowNewsAlert, setIsShowNewsAlert] = useState(true);
+  const [shouldShowNewsAlert, setIsShowNewsAlert] = useState(false);
   useEffect(() => {
 
     async function fetchBusinessInfo() {
