@@ -19,7 +19,7 @@ export function Home() {
   const [emailAddress, setEmailAdress] = useState();
   const [news, setNews] = useState();
   const [googleMapEmbedUrl, setGoogleMapEmbedUrl] = useState();
-  const [shouldShowNewsAlert, setIsShowNewsAlert] = useState(true);
+  const [shouldShowNewsAlert, setIsShowNewsAlert] = useState();
   useEffect(() => {
 
     async function fetchBusinessInfo() {
@@ -54,6 +54,13 @@ export function Home() {
       ).news);
     }
     fetchAndSetNews();
+
+    async function fetchAndSetIsShowNewsAlert() {
+      setIsShowNewsAlert(Date.parse(await (
+        await fetchBusinessInfo()
+      ).newsValidUntil) > new Date());
+    }
+    fetchAndSetIsShowNewsAlert();
 
     async function fetchAndSetGoogleMapEmbedUrl() {
       setGoogleMapEmbedUrl(
